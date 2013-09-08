@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E7C4D49C17DD1E0A001A6375 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7C4D49B17DD1E0A001A6375 /* Foundation.framework */; };
+		E7C4D4A117DD1E0A001A6375 /* WMLibrary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E7C4D4A017DD1E0A001A6375 /* WMLibrary.h */; };
+		E7C4D4A317DD1E0A001A6375 /* WMLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D4A217DD1E0A001A6375 /* WMLibrary.m */; };
+		E7C4D4F917DD1E3B001A6375 /* WMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D4AC17DD1E3B001A6375 /* WMViewController.m */; };
+		E7C4D4FA17DD1E3B001A6375 /* MKPolyline+ICServices.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D4B417DD1E3B001A6375 /* MKPolyline+ICServices.m */; };
+		E7C4D4FB17DD1E3B001A6375 /* NSArray+WMServices.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D4B817DD1E3B001A6375 /* NSArray+WMServices.m */; };
+		E7C4D4FE17DD1E3B001A6375 /* NSObject+WMServices.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D4C117DD1E3B001A6375 /* NSObject+WMServices.m */; };
+		E7C4D4FF17DD1E3B001A6375 /* NSString+WMServices.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D4C417DD1E3B001A6375 /* NSString+WMServices.m */; };
+		E7C4D50017DD1E3B001A6375 /* UIColor+WMServices.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D4C717DD1E3B001A6375 /* UIColor+WMServices.m */; };
+		E7C4D50117DD1E3B001A6375 /* UIColor+WMSwatch.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D4C917DD1E3B001A6375 /* UIColor+WMSwatch.m */; };
+		E7C4D50217DD1E3B001A6375 /* UIFont+WMFont.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D4CC17DD1E3B001A6375 /* UIFont+WMFont.m */; };
+		E7C4D50317DD1E3B001A6375 /* UIFont+WMServices.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D4CE17DD1E3B001A6375 /* UIFont+WMServices.m */; };
+		E7C4D50417DD1E3B001A6375 /* UIImage+WMServices.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D4D117DD1E3B001A6375 /* UIImage+WMServices.m */; };
+		E7C4D50517DD1E3B001A6375 /* UIImageView+WMServices.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D4D417DD1E3B001A6375 /* UIImageView+WMServices.m */; };
+		E7C4D50617DD1E3B001A6375 /* UILabel+WMServices.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D4D717DD1E3B001A6375 /* UILabel+WMServices.m */; };
+		E7C4D50717DD1E3B001A6375 /* UIScreen+WMServices.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D4DA17DD1E3B001A6375 /* UIScreen+WMServices.m */; };
+		E7C4D50817DD1E3B001A6375 /* ICGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D4DD17DD1E3B001A6375 /* ICGeometry.m */; };
+		E7C4D50917DD1E3B001A6375 /* UIView+Gesture.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D4DF17DD1E3B001A6375 /* UIView+Gesture.m */; };
+		E7C4D50A17DD1E3B001A6375 /* UIView+ICServices.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D4E117DD1E3B001A6375 /* UIView+ICServices.m */; };
+		E7C4D50B17DD1E3B001A6375 /* UIView+QuartzCore.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D4E317DD1E3B001A6375 /* UIView+QuartzCore.m */; };
+		E7C4D50C17DD1E3B001A6375 /* UIView+Transition.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D4E517DD1E3B001A6375 /* UIView+Transition.m */; };
+		E7C4D50D17DD1E3B001A6375 /* WMHTTPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D4E917DD1E3B001A6375 /* WMHTTPManager.m */; };
+		E7C4D50E17DD1E3B001A6375 /* WMHTTPURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D4EB17DD1E3B001A6375 /* WMHTTPURLConnection.m */; };
+		E7C4D50F17DD1E3B001A6375 /* WMHTTPURLConnectionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D4ED17DD1E3B001A6375 /* WMHTTPURLConnectionDelegate.m */; };
+		E7C4D51017DD1E3B001A6375 /* WMHTTPURLResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D4EF17DD1E3B001A6375 /* WMHTTPURLResponse.m */; };
+		E7C4D51117DD1E3B001A6375 /* WMMutableURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D4F117DD1E3B001A6375 /* WMMutableURLRequest.m */; };
+		E7C4D51217DD1E3B001A6375 /* ICLocalizable.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D4F417DD1E3B001A6375 /* ICLocalizable.m */; };
+		E7C4D51317DD1E3B001A6375 /* WMView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D4F817DD1E3B001A6375 /* WMView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E7C4D49617DD1E0A001A6375 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				E7C4D4A117DD1E0A001A6375 /* WMLibrary.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E7C4D49817DD1E0A001A6375 /* libWMLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWMLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7C4D49B17DD1E0A001A6375 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E7C4D49F17DD1E0A001A6375 /* WMLibrary-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WMLibrary-Prefix.pch"; sourceTree = "<group>"; };
+		E7C4D4A017DD1E0A001A6375 /* WMLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMLibrary.h; sourceTree = "<group>"; };
+		E7C4D4A217DD1E0A001A6375 /* WMLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMLibrary.m; sourceTree = "<group>"; };
+		E7C4D4AB17DD1E3B001A6375 /* WMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMViewController.h; sourceTree = "<group>"; };
+		E7C4D4AC17DD1E3B001A6375 /* WMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMViewController.m; sourceTree = "<group>"; };
+		E7C4D4AE17DD1E3B001A6375 /* WMLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMLog.h; sourceTree = "<group>"; };
+		E7C4D4AF17DD1E3B001A6375 /* WMNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMNotifications.h; sourceTree = "<group>"; };
+		E7C4D4B317DD1E3B001A6375 /* MKPolyline+WMServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKPolyline+WMServices.h"; sourceTree = "<group>"; };
+		E7C4D4B417DD1E3B001A6375 /* MKPolyline+ICServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKPolyline+ICServices.m"; sourceTree = "<group>"; };
+		E7C4D4B617DD1E3B001A6375 /* NSArray+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Extension.h"; sourceTree = "<group>"; };
+		E7C4D4B717DD1E3B001A6375 /* NSArray+WMServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+WMServices.h"; sourceTree = "<group>"; };
+		E7C4D4B817DD1E3B001A6375 /* NSArray+WMServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+WMServices.m"; sourceTree = "<group>"; };
+		E7C4D4C017DD1E3B001A6375 /* NSObject+WMServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+WMServices.h"; sourceTree = "<group>"; };
+		E7C4D4C117DD1E3B001A6375 /* NSObject+WMServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+WMServices.m"; sourceTree = "<group>"; };
+		E7C4D4C317DD1E3B001A6375 /* NSString+WMServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+WMServices.h"; sourceTree = "<group>"; };
+		E7C4D4C417DD1E3B001A6375 /* NSString+WMServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+WMServices.m"; sourceTree = "<group>"; };
+		E7C4D4C617DD1E3B001A6375 /* UIColor+WMServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+WMServices.h"; sourceTree = "<group>"; };
+		E7C4D4C717DD1E3B001A6375 /* UIColor+WMServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+WMServices.m"; sourceTree = "<group>"; };
+		E7C4D4C817DD1E3B001A6375 /* UIColor+WMSwatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+WMSwatch.h"; sourceTree = "<group>"; };
+		E7C4D4C917DD1E3B001A6375 /* UIColor+WMSwatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+WMSwatch.m"; sourceTree = "<group>"; };
+		E7C4D4CB17DD1E3B001A6375 /* UIFont+WMFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+WMFont.h"; sourceTree = "<group>"; };
+		E7C4D4CC17DD1E3B001A6375 /* UIFont+WMFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+WMFont.m"; sourceTree = "<group>"; };
+		E7C4D4CD17DD1E3B001A6375 /* UIFont+WMServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+WMServices.h"; sourceTree = "<group>"; };
+		E7C4D4CE17DD1E3B001A6375 /* UIFont+WMServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+WMServices.m"; sourceTree = "<group>"; };
+		E7C4D4D017DD1E3B001A6375 /* UIImage+WMServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WMServices.h"; sourceTree = "<group>"; };
+		E7C4D4D117DD1E3B001A6375 /* UIImage+WMServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WMServices.m"; sourceTree = "<group>"; };
+		E7C4D4D317DD1E3B001A6375 /* UIImageView+WMServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WMServices.h"; sourceTree = "<group>"; };
+		E7C4D4D417DD1E3B001A6375 /* UIImageView+WMServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WMServices.m"; sourceTree = "<group>"; };
+		E7C4D4D617DD1E3B001A6375 /* UILabel+WMServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+WMServices.h"; sourceTree = "<group>"; };
+		E7C4D4D717DD1E3B001A6375 /* UILabel+WMServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+WMServices.m"; sourceTree = "<group>"; };
+		E7C4D4D917DD1E3B001A6375 /* UIScreen+WMServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+WMServices.h"; sourceTree = "<group>"; };
+		E7C4D4DA17DD1E3B001A6375 /* UIScreen+WMServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+WMServices.m"; sourceTree = "<group>"; };
+		E7C4D4DC17DD1E3B001A6375 /* ICGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICGeometry.h; sourceTree = "<group>"; };
+		E7C4D4DD17DD1E3B001A6375 /* ICGeometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICGeometry.m; sourceTree = "<group>"; };
+		E7C4D4DE17DD1E3B001A6375 /* UIView+Gesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Gesture.h"; sourceTree = "<group>"; };
+		E7C4D4DF17DD1E3B001A6375 /* UIView+Gesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Gesture.m"; sourceTree = "<group>"; };
+		E7C4D4E017DD1E3B001A6375 /* UIView+ICServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ICServices.h"; sourceTree = "<group>"; };
+		E7C4D4E117DD1E3B001A6375 /* UIView+ICServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ICServices.m"; sourceTree = "<group>"; };
+		E7C4D4E217DD1E3B001A6375 /* UIView+QuartzCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+QuartzCore.h"; sourceTree = "<group>"; };
+		E7C4D4E317DD1E3B001A6375 /* UIView+QuartzCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+QuartzCore.m"; sourceTree = "<group>"; };
+		E7C4D4E417DD1E3B001A6375 /* UIView+Transition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Transition.h"; sourceTree = "<group>"; };
+		E7C4D4E517DD1E3B001A6375 /* UIView+Transition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Transition.m"; sourceTree = "<group>"; };
+		E7C4D4E817DD1E3B001A6375 /* WMHTTPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMHTTPManager.h; sourceTree = "<group>"; };
+		E7C4D4E917DD1E3B001A6375 /* WMHTTPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMHTTPManager.m; sourceTree = "<group>"; };
+		E7C4D4EA17DD1E3B001A6375 /* WMHTTPURLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMHTTPURLConnection.h; sourceTree = "<group>"; };
+		E7C4D4EB17DD1E3B001A6375 /* WMHTTPURLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMHTTPURLConnection.m; sourceTree = "<group>"; };
+		E7C4D4EC17DD1E3B001A6375 /* WMHTTPURLConnectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMHTTPURLConnectionDelegate.h; sourceTree = "<group>"; };
+		E7C4D4ED17DD1E3B001A6375 /* WMHTTPURLConnectionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMHTTPURLConnectionDelegate.m; sourceTree = "<group>"; };
+		E7C4D4EE17DD1E3B001A6375 /* WMHTTPURLResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMHTTPURLResponse.h; sourceTree = "<group>"; };
+		E7C4D4EF17DD1E3B001A6375 /* WMHTTPURLResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMHTTPURLResponse.m; sourceTree = "<group>"; };
+		E7C4D4F017DD1E3B001A6375 /* WMMutableURLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMMutableURLRequest.h; sourceTree = "<group>"; };
+		E7C4D4F117DD1E3B001A6375 /* WMMutableURLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMMutableURLRequest.m; sourceTree = "<group>"; };
+		E7C4D4F317DD1E3B001A6375 /* ICLocalizable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICLocalizable.h; sourceTree = "<group>"; };
+		E7C4D4F417DD1E3B001A6375 /* ICLocalizable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICLocalizable.m; sourceTree = "<group>"; };
+		E7C4D4F717DD1E3B001A6375 /* WMView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMView.h; sourceTree = "<group>"; };
+		E7C4D4F817DD1E3B001A6375 /* WMView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E7C4D49517DD1E0A001A6375 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7C4D49C17DD1E0A001A6375 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E7C4D48F17DD1E0A001A6375 = {
+			isa = PBXGroup;
+			children = (
+				E7C4D49D17DD1E0A001A6375 /* WMLibrary */,
+				E7C4D49A17DD1E0A001A6375 /* Frameworks */,
+				E7C4D49917DD1E0A001A6375 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E7C4D49917DD1E0A001A6375 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E7C4D49817DD1E0A001A6375 /* libWMLibrary.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E7C4D49A17DD1E0A001A6375 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7C4D49B17DD1E0A001A6375 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E7C4D49D17DD1E0A001A6375 /* WMLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				E7C4D4A917DD1E3B001A6375 /* Controller */,
+				E7C4D4AD17DD1E3B001A6375 /* Global */,
+				E7C4D4B017DD1E3B001A6375 /* Utilities */,
+				E7C4D4F517DD1E3B001A6375 /* View */,
+				E7C4D4A017DD1E0A001A6375 /* WMLibrary.h */,
+				E7C4D4A217DD1E0A001A6375 /* WMLibrary.m */,
+				E7C4D49E17DD1E0A001A6375 /* Supporting Files */,
+			);
+			path = WMLibrary;
+			sourceTree = "<group>";
+		};
+		E7C4D49E17DD1E0A001A6375 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E7C4D49F17DD1E0A001A6375 /* WMLibrary-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E7C4D4A917DD1E3B001A6375 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E7C4D4AA17DD1E3B001A6375 /* WMViewController */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E7C4D4AA17DD1E3B001A6375 /* WMViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E7C4D4AB17DD1E3B001A6375 /* WMViewController.h */,
+				E7C4D4AC17DD1E3B001A6375 /* WMViewController.m */,
+			);
+			name = WMViewController;
+			path = ICViewController;
+			sourceTree = "<group>";
+		};
+		E7C4D4AD17DD1E3B001A6375 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				E7C4D4AE17DD1E3B001A6375 /* WMLog.h */,
+				E7C4D4AF17DD1E3B001A6375 /* WMNotifications.h */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		E7C4D4B017DD1E3B001A6375 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E7C4D4B117DD1E3B001A6375 /* Categories */,
+				E7C4D4E617DD1E3B001A6375 /* Tool */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		E7C4D4B117DD1E3B001A6375 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				E7C4D4B217DD1E3B001A6375 /* MKPolyline */,
+				E7C4D4B517DD1E3B001A6375 /* NSArray */,
+				E7C4D4BF17DD1E3B001A6375 /* NSObject */,
+				E7C4D4C217DD1E3B001A6375 /* NSString */,
+				E7C4D4C517DD1E3B001A6375 /* UIColor */,
+				E7C4D4CA17DD1E3B001A6375 /* UIFont */,
+				E7C4D4CF17DD1E3B001A6375 /* UIImage */,
+				E7C4D4D217DD1E3B001A6375 /* UIImageView */,
+				E7C4D4D517DD1E3B001A6375 /* UILabel */,
+				E7C4D4D817DD1E3B001A6375 /* UIScreen */,
+				E7C4D4DB17DD1E3B001A6375 /* UIView */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		E7C4D4B217DD1E3B001A6375 /* MKPolyline */ = {
+			isa = PBXGroup;
+			children = (
+				E7C4D4B317DD1E3B001A6375 /* MKPolyline+WMServices.h */,
+				E7C4D4B417DD1E3B001A6375 /* MKPolyline+ICServices.m */,
+			);
+			path = MKPolyline;
+			sourceTree = "<group>";
+		};
+		E7C4D4B517DD1E3B001A6375 /* NSArray */ = {
+			isa = PBXGroup;
+			children = (
+				E7C4D4B617DD1E3B001A6375 /* NSArray+Extension.h */,
+				E7C4D4B717DD1E3B001A6375 /* NSArray+WMServices.h */,
+				E7C4D4B817DD1E3B001A6375 /* NSArray+WMServices.m */,
+			);
+			path = NSArray;
+			sourceTree = "<group>";
+		};
+		E7C4D4BF17DD1E3B001A6375 /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				E7C4D4C017DD1E3B001A6375 /* NSObject+WMServices.h */,
+				E7C4D4C117DD1E3B001A6375 /* NSObject+WMServices.m */,
+			);
+			path = NSObject;
+			sourceTree = "<group>";
+		};
+		E7C4D4C217DD1E3B001A6375 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				E7C4D4C317DD1E3B001A6375 /* NSString+WMServices.h */,
+				E7C4D4C417DD1E3B001A6375 /* NSString+WMServices.m */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		E7C4D4C517DD1E3B001A6375 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				E7C4D4C617DD1E3B001A6375 /* UIColor+WMServices.h */,
+				E7C4D4C717DD1E3B001A6375 /* UIColor+WMServices.m */,
+				E7C4D4C817DD1E3B001A6375 /* UIColor+WMSwatch.h */,
+				E7C4D4C917DD1E3B001A6375 /* UIColor+WMSwatch.m */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		E7C4D4CA17DD1E3B001A6375 /* UIFont */ = {
+			isa = PBXGroup;
+			children = (
+				E7C4D4CB17DD1E3B001A6375 /* UIFont+WMFont.h */,
+				E7C4D4CC17DD1E3B001A6375 /* UIFont+WMFont.m */,
+				E7C4D4CD17DD1E3B001A6375 /* UIFont+WMServices.h */,
+				E7C4D4CE17DD1E3B001A6375 /* UIFont+WMServices.m */,
+			);
+			path = UIFont;
+			sourceTree = "<group>";
+		};
+		E7C4D4CF17DD1E3B001A6375 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				E7C4D4D017DD1E3B001A6375 /* UIImage+WMServices.h */,
+				E7C4D4D117DD1E3B001A6375 /* UIImage+WMServices.m */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		E7C4D4D217DD1E3B001A6375 /* UIImageView */ = {
+			isa = PBXGroup;
+			children = (
+				E7C4D4D317DD1E3B001A6375 /* UIImageView+WMServices.h */,
+				E7C4D4D417DD1E3B001A6375 /* UIImageView+WMServices.m */,
+			);
+			path = UIImageView;
+			sourceTree = "<group>";
+		};
+		E7C4D4D517DD1E3B001A6375 /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				E7C4D4D617DD1E3B001A6375 /* UILabel+WMServices.h */,
+				E7C4D4D717DD1E3B001A6375 /* UILabel+WMServices.m */,
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
+		E7C4D4D817DD1E3B001A6375 /* UIScreen */ = {
+			isa = PBXGroup;
+			children = (
+				E7C4D4D917DD1E3B001A6375 /* UIScreen+WMServices.h */,
+				E7C4D4DA17DD1E3B001A6375 /* UIScreen+WMServices.m */,
+			);
+			path = UIScreen;
+			sourceTree = "<group>";
+		};
+		E7C4D4DB17DD1E3B001A6375 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				E7C4D4DC17DD1E3B001A6375 /* ICGeometry.h */,
+				E7C4D4DD17DD1E3B001A6375 /* ICGeometry.m */,
+				E7C4D4DE17DD1E3B001A6375 /* UIView+Gesture.h */,
+				E7C4D4DF17DD1E3B001A6375 /* UIView+Gesture.m */,
+				E7C4D4E017DD1E3B001A6375 /* UIView+ICServices.h */,
+				E7C4D4E117DD1E3B001A6375 /* UIView+ICServices.m */,
+				E7C4D4E217DD1E3B001A6375 /* UIView+QuartzCore.h */,
+				E7C4D4E317DD1E3B001A6375 /* UIView+QuartzCore.m */,
+				E7C4D4E417DD1E3B001A6375 /* UIView+Transition.h */,
+				E7C4D4E517DD1E3B001A6375 /* UIView+Transition.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		E7C4D4E617DD1E3B001A6375 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				E7C4D4E717DD1E3B001A6375 /* HTTP */,
+				E7C4D4F217DD1E3B001A6375 /* Localizable */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		E7C4D4E717DD1E3B001A6375 /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				E7C4D4E817DD1E3B001A6375 /* WMHTTPManager.h */,
+				E7C4D4E917DD1E3B001A6375 /* WMHTTPManager.m */,
+				E7C4D4EA17DD1E3B001A6375 /* WMHTTPURLConnection.h */,
+				E7C4D4EB17DD1E3B001A6375 /* WMHTTPURLConnection.m */,
+				E7C4D4EC17DD1E3B001A6375 /* WMHTTPURLConnectionDelegate.h */,
+				E7C4D4ED17DD1E3B001A6375 /* WMHTTPURLConnectionDelegate.m */,
+				E7C4D4EE17DD1E3B001A6375 /* WMHTTPURLResponse.h */,
+				E7C4D4EF17DD1E3B001A6375 /* WMHTTPURLResponse.m */,
+				E7C4D4F017DD1E3B001A6375 /* WMMutableURLRequest.h */,
+				E7C4D4F117DD1E3B001A6375 /* WMMutableURLRequest.m */,
+			);
+			path = HTTP;
+			sourceTree = "<group>";
+		};
+		E7C4D4F217DD1E3B001A6375 /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				E7C4D4F317DD1E3B001A6375 /* ICLocalizable.h */,
+				E7C4D4F417DD1E3B001A6375 /* ICLocalizable.m */,
+			);
+			path = Localizable;
+			sourceTree = "<group>";
+		};
+		E7C4D4F517DD1E3B001A6375 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E7C4D4F617DD1E3B001A6375 /* WMView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E7C4D4F617DD1E3B001A6375 /* WMView */ = {
+			isa = PBXGroup;
+			children = (
+				E7C4D4F717DD1E3B001A6375 /* WMView.h */,
+				E7C4D4F817DD1E3B001A6375 /* WMView.m */,
+			);
+			name = WMView;
+			path = ICView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E7C4D49717DD1E0A001A6375 /* WMLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7C4D4A617DD1E0A001A6375 /* Build configuration list for PBXNativeTarget "WMLibrary" */;
+			buildPhases = (
+				E7C4D49417DD1E0A001A6375 /* Sources */,
+				E7C4D49517DD1E0A001A6375 /* Frameworks */,
+				E7C4D49617DD1E0A001A6375 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WMLibrary;
+			productName = WMLibrary;
+			productReference = E7C4D49817DD1E0A001A6375 /* libWMLibrary.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E7C4D49017DD1E0A001A6375 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Bros;
+			};
+			buildConfigurationList = E7C4D49317DD1E0A001A6375 /* Build configuration list for PBXProject "WMLibrary" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E7C4D48F17DD1E0A001A6375;
+			productRefGroup = E7C4D49917DD1E0A001A6375 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E7C4D49717DD1E0A001A6375 /* WMLibrary */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E7C4D49417DD1E0A001A6375 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7C4D4A317DD1E0A001A6375 /* WMLibrary.m in Sources */,
+				E7C4D4F917DD1E3B001A6375 /* WMViewController.m in Sources */,
+				E7C4D4FA17DD1E3B001A6375 /* MKPolyline+ICServices.m in Sources */,
+				E7C4D4FB17DD1E3B001A6375 /* NSArray+WMServices.m in Sources */,
+				E7C4D4FE17DD1E3B001A6375 /* NSObject+WMServices.m in Sources */,
+				E7C4D4FF17DD1E3B001A6375 /* NSString+WMServices.m in Sources */,
+				E7C4D50017DD1E3B001A6375 /* UIColor+WMServices.m in Sources */,
+				E7C4D50117DD1E3B001A6375 /* UIColor+WMSwatch.m in Sources */,
+				E7C4D50217DD1E3B001A6375 /* UIFont+WMFont.m in Sources */,
+				E7C4D50317DD1E3B001A6375 /* UIFont+WMServices.m in Sources */,
+				E7C4D50417DD1E3B001A6375 /* UIImage+WMServices.m in Sources */,
+				E7C4D50517DD1E3B001A6375 /* UIImageView+WMServices.m in Sources */,
+				E7C4D50617DD1E3B001A6375 /* UILabel+WMServices.m in Sources */,
+				E7C4D50717DD1E3B001A6375 /* UIScreen+WMServices.m in Sources */,
+				E7C4D50817DD1E3B001A6375 /* ICGeometry.m in Sources */,
+				E7C4D50917DD1E3B001A6375 /* UIView+Gesture.m in Sources */,
+				E7C4D50A17DD1E3B001A6375 /* UIView+ICServices.m in Sources */,
+				E7C4D50B17DD1E3B001A6375 /* UIView+QuartzCore.m in Sources */,
+				E7C4D50C17DD1E3B001A6375 /* UIView+Transition.m in Sources */,
+				E7C4D50D17DD1E3B001A6375 /* WMHTTPManager.m in Sources */,
+				E7C4D50E17DD1E3B001A6375 /* WMHTTPURLConnection.m in Sources */,
+				E7C4D50F17DD1E3B001A6375 /* WMHTTPURLConnectionDelegate.m in Sources */,
+				E7C4D51017DD1E3B001A6375 /* WMHTTPURLResponse.m in Sources */,
+				E7C4D51117DD1E3B001A6375 /* WMMutableURLRequest.m in Sources */,
+				E7C4D51217DD1E3B001A6375 /* ICLocalizable.m in Sources */,
+				E7C4D51317DD1E3B001A6375 /* WMView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E7C4D4A417DD1E0A001A6375 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E7C4D4A517DD1E0A001A6375 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E7C4D4A717DD1E0A001A6375 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/WMLibrary.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WMLibrary/WMLibrary-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E7C4D4A817DD1E0A001A6375 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/WMLibrary.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WMLibrary/WMLibrary-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E7C4D49317DD1E0A001A6375 /* Build configuration list for PBXProject "WMLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7C4D4A417DD1E0A001A6375 /* Debug */,
+				E7C4D4A517DD1E0A001A6375 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7C4D4A617DD1E0A001A6375 /* Build configuration list for PBXNativeTarget "WMLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7C4D4A717DD1E0A001A6375 /* Debug */,
+				E7C4D4A817DD1E0A001A6375 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E7C4D49017DD1E0A001A6375 /* Project object */;
+}
