@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		E7C4D49C17DD1E0A001A6375 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7C4D49B17DD1E0A001A6375 /* Foundation.framework */; };
-		E7C4D4A117DD1E0A001A6375 /* WMLibrary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E7C4D4A017DD1E0A001A6375 /* WMLibrary.h */; };
-		E7C4D4A317DD1E0A001A6375 /* WMLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D4A217DD1E0A001A6375 /* WMLibrary.m */; };
 		E7C4D4F917DD1E3B001A6375 /* WMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D4AC17DD1E3B001A6375 /* WMViewController.m */; };
 		E7C4D4FA17DD1E3B001A6375 /* MKPolyline+ICServices.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D4B417DD1E3B001A6375 /* MKPolyline+ICServices.m */; };
 		E7C4D4FB17DD1E3B001A6375 /* NSArray+WMServices.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D4B817DD1E3B001A6375 /* NSArray+WMServices.m */; };
@@ -35,6 +33,11 @@
 		E7C4D51117DD1E3B001A6375 /* WMMutableURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D4F117DD1E3B001A6375 /* WMMutableURLRequest.m */; };
 		E7C4D51217DD1E3B001A6375 /* ICLocalizable.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D4F417DD1E3B001A6375 /* ICLocalizable.m */; };
 		E7C4D51317DD1E3B001A6375 /* WMView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D4F817DD1E3B001A6375 /* WMView.m */; };
+		E7C4D56D17DD99B2001A6375 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7C4D56C17DD99B2001A6375 /* UIKit.framework */; };
+		E7C4D56F17DD99BB001A6375 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7C4D56E17DD99BB001A6375 /* QuartzCore.framework */; };
+		E7C4D57117DD99C0001A6375 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7C4D57017DD99C0001A6375 /* CoreGraphics.framework */; };
+		E7C4D57317DD99C5001A6375 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7C4D57217DD99C5001A6375 /* MapKit.framework */; };
+		E7C4D57717DD9B20001A6375 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7C4D57617DD9B20001A6375 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,7 +47,6 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				E7C4D4A117DD1E0A001A6375 /* WMLibrary.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,8 +56,6 @@
 		E7C4D49817DD1E0A001A6375 /* libWMLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWMLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7C4D49B17DD1E0A001A6375 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E7C4D49F17DD1E0A001A6375 /* WMLibrary-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WMLibrary-Prefix.pch"; sourceTree = "<group>"; };
-		E7C4D4A017DD1E0A001A6375 /* WMLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMLibrary.h; sourceTree = "<group>"; };
-		E7C4D4A217DD1E0A001A6375 /* WMLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMLibrary.m; sourceTree = "<group>"; };
 		E7C4D4AB17DD1E3B001A6375 /* WMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMViewController.h; sourceTree = "<group>"; };
 		E7C4D4AC17DD1E3B001A6375 /* WMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMViewController.m; sourceTree = "<group>"; };
 		E7C4D4AE17DD1E3B001A6375 /* WMLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMLog.h; sourceTree = "<group>"; };
@@ -109,6 +109,12 @@
 		E7C4D4F417DD1E3B001A6375 /* ICLocalizable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICLocalizable.m; sourceTree = "<group>"; };
 		E7C4D4F717DD1E3B001A6375 /* WMView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMView.h; sourceTree = "<group>"; };
 		E7C4D4F817DD1E3B001A6375 /* WMView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMView.m; sourceTree = "<group>"; };
+		E7C4D56917DD971C001A6375 /* WMLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMLibrary.h; sourceTree = "<group>"; };
+		E7C4D56C17DD99B2001A6375 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E7C4D56E17DD99BB001A6375 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E7C4D57017DD99C0001A6375 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E7C4D57217DD99C5001A6375 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E7C4D57617DD9B20001A6375 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +122,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7C4D57717DD9B20001A6375 /* CoreLocation.framework in Frameworks */,
+				E7C4D57317DD99C5001A6375 /* MapKit.framework in Frameworks */,
+				E7C4D57117DD99C0001A6375 /* CoreGraphics.framework in Frameworks */,
+				E7C4D56F17DD99BB001A6375 /* QuartzCore.framework in Frameworks */,
+				E7C4D56D17DD99B2001A6375 /* UIKit.framework in Frameworks */,
 				E7C4D49C17DD1E0A001A6375 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,6 +154,11 @@
 		E7C4D49A17DD1E0A001A6375 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E7C4D57617DD9B20001A6375 /* CoreLocation.framework */,
+				E7C4D57217DD99C5001A6375 /* MapKit.framework */,
+				E7C4D57017DD99C0001A6375 /* CoreGraphics.framework */,
+				E7C4D56E17DD99BB001A6375 /* QuartzCore.framework */,
+				E7C4D56C17DD99B2001A6375 /* UIKit.framework */,
 				E7C4D49B17DD1E0A001A6375 /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -155,9 +171,8 @@
 				E7C4D4AD17DD1E3B001A6375 /* Global */,
 				E7C4D4B017DD1E3B001A6375 /* Utilities */,
 				E7C4D4F517DD1E3B001A6375 /* View */,
-				E7C4D4A017DD1E0A001A6375 /* WMLibrary.h */,
-				E7C4D4A217DD1E0A001A6375 /* WMLibrary.m */,
 				E7C4D49E17DD1E0A001A6375 /* Supporting Files */,
+				E7C4D56917DD971C001A6375 /* WMLibrary.h */,
 			);
 			path = WMLibrary;
 			sourceTree = "<group>";
@@ -440,7 +455,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7C4D4A317DD1E0A001A6375 /* WMLibrary.m in Sources */,
 				E7C4D4F917DD1E3B001A6375 /* WMViewController.m in Sources */,
 				E7C4D4FA17DD1E3B001A6375 /* MKPolyline+ICServices.m in Sources */,
 				E7C4D4FB17DD1E3B001A6375 /* NSArray+WMServices.m in Sources */,
@@ -568,6 +582,7 @@
 				E7C4D4A817DD1E0A001A6375 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

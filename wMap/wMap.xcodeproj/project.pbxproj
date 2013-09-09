@@ -16,6 +16,24 @@
 		E7C4D53317DD2114001A6375 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E7C4D53217DD2114001A6375 /* Default.png */; };
 		E7C4D53517DD2114001A6375 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7C4D53417DD2114001A6375 /* Default@2x.png */; };
 		E7C4D53717DD2114001A6375 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7C4D53617DD2114001A6375 /* Default-568h@2x.png */; };
+		E7C4D54917DD920A001A6375 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7C4D54417DD920A001A6375 /* Roboto-Bold.ttf */; };
+		E7C4D54A17DD920A001A6375 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7C4D54517DD920A001A6375 /* Roboto-Light.ttf */; };
+		E7C4D54B17DD920A001A6375 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7C4D54617DD920A001A6375 /* Roboto-Medium.ttf */; };
+		E7C4D54C17DD920A001A6375 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7C4D54717DD920A001A6375 /* Roboto-Regular.ttf */; };
+		E7C4D54D17DD920A001A6375 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7C4D54817DD920A001A6375 /* Roboto-Thin.ttf */; };
+		E7C4D55417DD937A001A6375 /* WMTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D55317DD937A001A6375 /* WMTabBarViewController.m */; };
+		E7C4D55717DD93F5001A6375 /* WMBuildingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D55617DD93F5001A6375 /* WMBuildingViewController.m */; };
+		E7C4D55A17DD93FE001A6375 /* WMMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D55917DD93FE001A6375 /* WMMapViewController.m */; };
+		E7C4D55D17DD9407001A6375 /* WMShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D55C17DD9407001A6375 /* WMShowViewController.m */; };
+		E7C4D56017DD941A001A6375 /* WMBuildingView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D55F17DD941A001A6375 /* WMBuildingView.m */; };
+		E7C4D56317DD9431001A6375 /* WMMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D56217DD9431001A6375 /* WMMapView.m */; };
+		E7C4D56617DD943D001A6375 /* WMShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D56517DD943D001A6375 /* WMShowView.m */; };
+		E7C4D56B17DD9990001A6375 /* libWMLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7C4D56A17DD9990001A6375 /* libWMLibrary.a */; };
+		E7C4D57517DD9AD9001A6375 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7C4D57417DD9AD9001A6375 /* MapKit.framework */; };
+		E7C4D57917DD9B2D001A6375 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7C4D57817DD9B2D001A6375 /* CoreLocation.framework */; };
+		E7C4D57C17DD9BF3001A6375 /* WMNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D57B17DD9BF3001A6375 /* WMNavigationBar.m */; };
+		E7C4D58017DD9C98001A6375 /* navigation_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = E7C4D57F17DD9C98001A6375 /* navigation_bar.png */; };
+		E7C4D58517DD9FBF001A6375 /* navigation_bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7C4D58417DD9FBE001A6375 /* navigation_bar@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +50,32 @@
 		E7C4D53217DD2114001A6375 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		E7C4D53417DD2114001A6375 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		E7C4D53617DD2114001A6375 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E7C4D54417DD920A001A6375 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		E7C4D54517DD920A001A6375 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		E7C4D54617DD920A001A6375 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		E7C4D54717DD920A001A6375 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		E7C4D54817DD920A001A6375 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		E7C4D55217DD937A001A6375 /* WMTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMTabBarViewController.h; sourceTree = "<group>"; };
+		E7C4D55317DD937A001A6375 /* WMTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMTabBarViewController.m; sourceTree = "<group>"; };
+		E7C4D55517DD93F5001A6375 /* WMBuildingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMBuildingViewController.h; sourceTree = "<group>"; };
+		E7C4D55617DD93F5001A6375 /* WMBuildingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMBuildingViewController.m; sourceTree = "<group>"; };
+		E7C4D55817DD93FE001A6375 /* WMMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMMapViewController.h; sourceTree = "<group>"; };
+		E7C4D55917DD93FE001A6375 /* WMMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMMapViewController.m; sourceTree = "<group>"; };
+		E7C4D55B17DD9407001A6375 /* WMShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMShowViewController.h; sourceTree = "<group>"; };
+		E7C4D55C17DD9407001A6375 /* WMShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMShowViewController.m; sourceTree = "<group>"; };
+		E7C4D55E17DD941A001A6375 /* WMBuildingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMBuildingView.h; sourceTree = "<group>"; };
+		E7C4D55F17DD941A001A6375 /* WMBuildingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMBuildingView.m; sourceTree = "<group>"; };
+		E7C4D56117DD9431001A6375 /* WMMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMMapView.h; sourceTree = "<group>"; };
+		E7C4D56217DD9431001A6375 /* WMMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMMapView.m; sourceTree = "<group>"; };
+		E7C4D56417DD943D001A6375 /* WMShowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMShowView.h; sourceTree = "<group>"; };
+		E7C4D56517DD943D001A6375 /* WMShowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMShowView.m; sourceTree = "<group>"; };
+		E7C4D56A17DD9990001A6375 /* libWMLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libWMLibrary.a; path = "../WMLibrary/build/Release-iphoneos/libWMLibrary.a"; sourceTree = "<group>"; };
+		E7C4D57417DD9AD9001A6375 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E7C4D57817DD9B2D001A6375 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		E7C4D57A17DD9BF2001A6375 /* WMNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMNavigationBar.h; sourceTree = "<group>"; };
+		E7C4D57B17DD9BF3001A6375 /* WMNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMNavigationBar.m; sourceTree = "<group>"; };
+		E7C4D57F17DD9C98001A6375 /* navigation_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navigation_bar.png; sourceTree = "<group>"; };
+		E7C4D58417DD9FBE001A6375 /* navigation_bar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigation_bar@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +83,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7C4D57917DD9B2D001A6375 /* CoreLocation.framework in Frameworks */,
+				E7C4D57517DD9AD9001A6375 /* MapKit.framework in Frameworks */,
+				E7C4D56B17DD9990001A6375 /* libWMLibrary.a in Frameworks */,
 				E7C4D52117DD2114001A6375 /* UIKit.framework in Frameworks */,
 				E7C4D52317DD2114001A6375 /* Foundation.framework in Frameworks */,
 				E7C4D52517DD2114001A6375 /* CoreGraphics.framework in Frameworks */,
@@ -68,6 +115,9 @@
 		E7C4D51F17DD2114001A6375 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E7C4D57817DD9B2D001A6375 /* CoreLocation.framework */,
+				E7C4D57417DD9AD9001A6375 /* MapKit.framework */,
+				E7C4D56A17DD9990001A6375 /* libWMLibrary.a */,
 				E7C4D52017DD2114001A6375 /* UIKit.framework */,
 				E7C4D52217DD2114001A6375 /* Foundation.framework */,
 				E7C4D52417DD2114001A6375 /* CoreGraphics.framework */,
@@ -78,6 +128,9 @@
 		E7C4D52617DD2114001A6375 /* wMap */ = {
 			isa = PBXGroup;
 			children = (
+				E7C4D55117DD9370001A6375 /* Controller */,
+				E7C4D54217DD91B6001A6375 /* Modal */,
+				E7C4D54317DD91B6001A6375 /* View */,
 				E7C4D52F17DD2114001A6375 /* WMAppDelegate.h */,
 				E7C4D53017DD2114001A6375 /* WMAppDelegate.m */,
 				E7C4D52717DD2114001A6375 /* Supporting Files */,
@@ -114,6 +167,11 @@
 		E7C4D53E17DD2149001A6375 /* font */ = {
 			isa = PBXGroup;
 			children = (
+				E7C4D54417DD920A001A6375 /* Roboto-Bold.ttf */,
+				E7C4D54517DD920A001A6375 /* Roboto-Light.ttf */,
+				E7C4D54617DD920A001A6375 /* Roboto-Medium.ttf */,
+				E7C4D54717DD920A001A6375 /* Roboto-Regular.ttf */,
+				E7C4D54817DD920A001A6375 /* Roboto-Thin.ttf */,
 			);
 			path = font;
 			sourceTree = "<group>";
@@ -121,6 +179,8 @@
 		E7C4D53F17DD2149001A6375 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				E7C4D58417DD9FBE001A6375 /* navigation_bar@2x.png */,
+				E7C4D57F17DD9C98001A6375 /* navigation_bar.png */,
 			);
 			path = image;
 			sourceTree = "<group>";
@@ -130,6 +190,43 @@
 			children = (
 			);
 			path = json;
+			sourceTree = "<group>";
+		};
+		E7C4D54217DD91B6001A6375 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		E7C4D54317DD91B6001A6375 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E7C4D55E17DD941A001A6375 /* WMBuildingView.h */,
+				E7C4D55F17DD941A001A6375 /* WMBuildingView.m */,
+				E7C4D56117DD9431001A6375 /* WMMapView.h */,
+				E7C4D56217DD9431001A6375 /* WMMapView.m */,
+				E7C4D56417DD943D001A6375 /* WMShowView.h */,
+				E7C4D56517DD943D001A6375 /* WMShowView.m */,
+				E7C4D57A17DD9BF2001A6375 /* WMNavigationBar.h */,
+				E7C4D57B17DD9BF3001A6375 /* WMNavigationBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E7C4D55117DD9370001A6375 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E7C4D55217DD937A001A6375 /* WMTabBarViewController.h */,
+				E7C4D55317DD937A001A6375 /* WMTabBarViewController.m */,
+				E7C4D55517DD93F5001A6375 /* WMBuildingViewController.h */,
+				E7C4D55617DD93F5001A6375 /* WMBuildingViewController.m */,
+				E7C4D55817DD93FE001A6375 /* WMMapViewController.h */,
+				E7C4D55917DD93FE001A6375 /* WMMapViewController.m */,
+				E7C4D55B17DD9407001A6375 /* WMShowViewController.h */,
+				E7C4D55C17DD9407001A6375 /* WMShowViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +285,13 @@
 				E7C4D53317DD2114001A6375 /* Default.png in Resources */,
 				E7C4D53517DD2114001A6375 /* Default@2x.png in Resources */,
 				E7C4D53717DD2114001A6375 /* Default-568h@2x.png in Resources */,
+				E7C4D54917DD920A001A6375 /* Roboto-Bold.ttf in Resources */,
+				E7C4D54A17DD920A001A6375 /* Roboto-Light.ttf in Resources */,
+				E7C4D54B17DD920A001A6375 /* Roboto-Medium.ttf in Resources */,
+				E7C4D54C17DD920A001A6375 /* Roboto-Regular.ttf in Resources */,
+				E7C4D54D17DD920A001A6375 /* Roboto-Thin.ttf in Resources */,
+				E7C4D58017DD9C98001A6375 /* navigation_bar.png in Resources */,
+				E7C4D58517DD9FBF001A6375 /* navigation_bar@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +304,14 @@
 			files = (
 				E7C4D52D17DD2114001A6375 /* main.m in Sources */,
 				E7C4D53117DD2114001A6375 /* WMAppDelegate.m in Sources */,
+				E7C4D55417DD937A001A6375 /* WMTabBarViewController.m in Sources */,
+				E7C4D55717DD93F5001A6375 /* WMBuildingViewController.m in Sources */,
+				E7C4D55A17DD93FE001A6375 /* WMMapViewController.m in Sources */,
+				E7C4D55D17DD9407001A6375 /* WMShowViewController.m in Sources */,
+				E7C4D56017DD941A001A6375 /* WMBuildingView.m in Sources */,
+				E7C4D56317DD9431001A6375 /* WMMapView.m in Sources */,
+				E7C4D56617DD943D001A6375 /* WMShowView.m in Sources */,
+				E7C4D57C17DD9BF3001A6375 /* WMNavigationBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,7 +390,9 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "wMap/wMap-Prefix.pch";
+				HEADER_SEARCH_PATHS = "../WMLibrary/WMLibrary/**";
 				INFOPLIST_FILE = "wMap/wMap-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -289,7 +403,9 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "wMap/wMap-Prefix.pch";
+				HEADER_SEARCH_PATHS = "../WMLibrary/WMLibrary/**";
 				INFOPLIST_FILE = "wMap/wMap-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -314,6 +430,7 @@
 				E7C4D53C17DD2114001A6375 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

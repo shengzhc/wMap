@@ -7,6 +7,18 @@
 //
 
 #import "WMAppDelegate.h"
+#import "WMTabBarViewController.h"
+#import "WMBuildingViewController.h"
+#import "WMMapViewController.h"
+#import "WMShowViewController.h"
+
+#import "WMNavigationBar.h"
+
+@interface WMAppDelegate ()
+
+@property (nonatomic, strong) WMTabBarViewController *tabBarViewController;
+
+@end
 
 @implementation WMAppDelegate
 
@@ -15,6 +27,30 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackOpaque animated:YES];
+        
+    _tabBarViewController = [[WMTabBarViewController alloc] init];
+    NSMutableArray *viewControllers = [NSMutableArray array];
+    WMBuildingViewController *buildingViewController = [[WMBuildingViewController alloc] initWithDelegate:self];
+    WMMapViewController *mapViewController = [[WMMapViewController alloc] initWithDelegate:self];
+    WMShowViewController *showViewController = [[WMShowViewController alloc] initWithDelegate:self];
+    
+    UINavigationController *buildingNav = [[UINavigationController alloc] initWithNavigationBarClass:[WMNavigationBar class] toolbarClass:nil];
+    [buildingNav addChildViewController:buildingViewController];
+    
+    UINavigationController *mapNav = [[UINavigationController alloc] initWithNavigationBarClass:[WMNavigationBar class] toolbarClass:nil];
+    [mapNav addChildViewController:mapViewController];
+    
+    UINavigationController *showNav = [[UINavigationController alloc] initWithNavigationBarClass:[WMNavigationBar class] toolbarClass:nil];
+    [showNav addChildViewController:showViewController];
+    
+    [viewControllers addObject:buildingNav];
+    [viewControllers addObject:mapNav];
+    [viewControllers addObject:showNav];
+    
+    [_tabBarViewController setViewControllers:viewControllers];
+    self.window.rootViewController = _tabBarViewController;
     [self.window makeKeyAndVisible];
     return YES;
 }

@@ -9,7 +9,7 @@
 #ifndef ICLibrary_NSArray_Extension_h
 #define ICLibrary_NSArray_Extension_h
 
-#import "NSArray+ICServices.h"
+#import "NSArray+WMServices.h"
 
 
 #endif
