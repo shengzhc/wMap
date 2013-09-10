@@ -33,4 +33,10 @@
     return [WMBuildingView class];
 }
 
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    self.navigationItem.leftBarButtonItems = nil;
+}
 @end

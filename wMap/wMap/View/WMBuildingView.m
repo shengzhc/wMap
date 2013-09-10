@@ -17,7 +17,6 @@
                        delegate:delegate];
     if (self)
     {
-        self.backgroundColor = [UIColor colorWithRed:150 green:0 blue:0 alpha:1.0];
     }
     
     return self;

@@ -18,7 +18,6 @@
     if (self)
     {
         
-        self.backgroundColor = [UIColor colorWithRed:0 green:150 blue:0 alpha:1.0];
     }
     
     return self;
