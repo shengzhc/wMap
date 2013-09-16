@@ -8,6 +8,6 @@
 
 #import "WMView.h"
 
-@interface WMBuildingView : WMView
+@interface WMBuildingView : WMView < UICollectionViewDataSource, UICollectionViewDelegate >
 
 @end

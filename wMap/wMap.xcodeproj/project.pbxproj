@@ -19,12 +19,19 @@
 		E781D73F17DEC5770005DD2E /* tab_map@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E781D73E17DEC5770005DD2E /* tab_map@2x.png */; };
 		E781D74117DEC5850005DD2E /* tab_map_press.png in Resources */ = {isa = PBXBuildFile; fileRef = E781D74017DEC5850005DD2E /* tab_map_press.png */; };
 		E781D74317DEC5A00005DD2E /* tab_map_press@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E781D74217DEC5A00005DD2E /* tab_map_press@2x.png */; };
+		E781D74617DEE2F50005DD2E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E781D74517DEE2F50005DD2E /* QuartzCore.framework */; };
+		E781D74817DEE3030005DD2E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E781D74717DEE3030005DD2E /* SystemConfiguration.framework */; };
+		E781D74A17DEE30F0005DD2E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E781D74917DEE30F0005DD2E /* CoreTelephony.framework */; };
+		E781D74C17DEE31E0005DD2E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E781D74B17DEE31E0005DD2E /* libz.dylib */; };
+		E781D79917DEE3F10005DD2E /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E781D79817DEE3F10005DD2E /* OpenGLES.framework */; };
+		E781D8CF17DEF3810005DD2E /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E781D8CE17DEF3810005DD2E /* CoreText.framework */; };
+		E781D90C17DEF71E0005DD2E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7C4D57417DD9AD9001A6375 /* MapKit.framework */; };
 		E7C4D52117DD2114001A6375 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7C4D52017DD2114001A6375 /* UIKit.framework */; };
 		E7C4D52317DD2114001A6375 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7C4D52217DD2114001A6375 /* Foundation.framework */; };
 		E7C4D52517DD2114001A6375 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7C4D52417DD2114001A6375 /* CoreGraphics.framework */; };
 		E7C4D52B17DD2114001A6375 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E7C4D52917DD2114001A6375 /* InfoPlist.strings */; };
 		E7C4D52D17DD2114001A6375 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D52C17DD2114001A6375 /* main.m */; };
-		E7C4D53117DD2114001A6375 /* WMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D53017DD2114001A6375 /* WMAppDelegate.m */; };
+		E7C4D53117DD2114001A6375 /* WMAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D53017DD2114001A6375 /* WMAppDelegate.mm */; };
 		E7C4D53317DD2114001A6375 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E7C4D53217DD2114001A6375 /* Default.png */; };
 		E7C4D53517DD2114001A6375 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7C4D53417DD2114001A6375 /* Default@2x.png */; };
 		E7C4D53717DD2114001A6375 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7C4D53617DD2114001A6375 /* Default-568h@2x.png */; };
@@ -34,18 +41,19 @@
 		E7C4D54C17DD920A001A6375 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7C4D54717DD920A001A6375 /* Roboto-Regular.ttf */; };
 		E7C4D54D17DD920A001A6375 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7C4D54817DD920A001A6375 /* Roboto-Thin.ttf */; };
 		E7C4D55417DD937A001A6375 /* WMTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D55317DD937A001A6375 /* WMTabBarViewController.m */; };
-		E7C4D55717DD93F5001A6375 /* WMBuildingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D55617DD93F5001A6375 /* WMBuildingViewController.m */; };
+		E7C4D55717DD93F5001A6375 /* WMBuildingViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D55617DD93F5001A6375 /* WMBuildingViewController.mm */; };
 		E7C4D55A17DD93FE001A6375 /* WMMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D55917DD93FE001A6375 /* WMMapViewController.m */; };
 		E7C4D55D17DD9407001A6375 /* WMShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D55C17DD9407001A6375 /* WMShowViewController.m */; };
 		E7C4D56017DD941A001A6375 /* WMBuildingView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D55F17DD941A001A6375 /* WMBuildingView.m */; };
 		E7C4D56317DD9431001A6375 /* WMMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D56217DD9431001A6375 /* WMMapView.m */; };
 		E7C4D56617DD943D001A6375 /* WMShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D56517DD943D001A6375 /* WMShowView.m */; };
 		E7C4D56B17DD9990001A6375 /* libWMLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7C4D56A17DD9990001A6375 /* libWMLibrary.a */; };
-		E7C4D57517DD9AD9001A6375 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7C4D57417DD9AD9001A6375 /* MapKit.framework */; };
 		E7C4D57917DD9B2D001A6375 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7C4D57817DD9B2D001A6375 /* CoreLocation.framework */; };
 		E7C4D57C17DD9BF3001A6375 /* WMNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C4D57B17DD9BF3001A6375 /* WMNavigationBar.m */; };
 		E7C4D58017DD9C98001A6375 /* navigation_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = E7C4D57F17DD9C98001A6375 /* navigation_bar.png */; };
 		E7C4D58517DD9FBF001A6375 /* navigation_bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7C4D58417DD9FBE001A6375 /* navigation_bar@2x.png */; };
+		E7EC314517E5FE0100C394E0 /* WMVerticalCollectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E7EC314417E5FE0100C394E0 /* WMVerticalCollectionLayout.m */; };
+		E7EC314817E6015D00C394E0 /* WMVerticalCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E7EC314717E6015D00C394E0 /* WMVerticalCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +69,12 @@
 		E781D73E17DEC5770005DD2E /* tab_map@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_map@2x.png"; sourceTree = "<group>"; };
 		E781D74017DEC5850005DD2E /* tab_map_press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_map_press.png; sourceTree = "<group>"; };
 		E781D74217DEC5A00005DD2E /* tab_map_press@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_map_press@2x.png"; sourceTree = "<group>"; };
+		E781D74517DEE2F50005DD2E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E781D74717DEE3030005DD2E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		E781D74917DEE30F0005DD2E /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		E781D74B17DEE31E0005DD2E /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		E781D79817DEE3F10005DD2E /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		E781D8CE17DEF3810005DD2E /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		E7C4D51D17DD2114001A6375 /* wMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7C4D52017DD2114001A6375 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E7C4D52217DD2114001A6375 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -70,7 +84,7 @@
 		E7C4D52C17DD2114001A6375 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E7C4D52E17DD2114001A6375 /* wMap-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wMap-Prefix.pch"; sourceTree = "<group>"; };
 		E7C4D52F17DD2114001A6375 /* WMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMAppDelegate.h; sourceTree = "<group>"; };
-		E7C4D53017DD2114001A6375 /* WMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMAppDelegate.m; sourceTree = "<group>"; };
+		E7C4D53017DD2114001A6375 /* WMAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = WMAppDelegate.mm; sourceTree = "<group>"; };
 		E7C4D53217DD2114001A6375 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		E7C4D53417DD2114001A6375 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		E7C4D53617DD2114001A6375 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -82,7 +96,7 @@
 		E7C4D55217DD937A001A6375 /* WMTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMTabBarViewController.h; sourceTree = "<group>"; };
 		E7C4D55317DD937A001A6375 /* WMTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMTabBarViewController.m; sourceTree = "<group>"; };
 		E7C4D55517DD93F5001A6375 /* WMBuildingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMBuildingViewController.h; sourceTree = "<group>"; };
-		E7C4D55617DD93F5001A6375 /* WMBuildingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMBuildingViewController.m; sourceTree = "<group>"; };
+		E7C4D55617DD93F5001A6375 /* WMBuildingViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WMBuildingViewController.mm; sourceTree = "<group>"; };
 		E7C4D55817DD93FE001A6375 /* WMMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMMapViewController.h; sourceTree = "<group>"; };
 		E7C4D55917DD93FE001A6375 /* WMMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMMapViewController.m; sourceTree = "<group>"; };
 		E7C4D55B17DD9407001A6375 /* WMShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMShowViewController.h; sourceTree = "<group>"; };
@@ -100,6 +114,10 @@
 		E7C4D57B17DD9BF3001A6375 /* WMNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMNavigationBar.m; sourceTree = "<group>"; };
 		E7C4D57F17DD9C98001A6375 /* navigation_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navigation_bar.png; sourceTree = "<group>"; };
 		E7C4D58417DD9FBE001A6375 /* navigation_bar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigation_bar@2x.png"; sourceTree = "<group>"; };
+		E7EC314317E5FE0100C394E0 /* WMVerticalCollectionLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMVerticalCollectionLayout.h; sourceTree = "<group>"; };
+		E7EC314417E5FE0100C394E0 /* WMVerticalCollectionLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMVerticalCollectionLayout.m; sourceTree = "<group>"; };
+		E7EC314617E6015D00C394E0 /* WMVerticalCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMVerticalCollectionViewCell.h; sourceTree = "<group>"; };
+		E7EC314717E6015D00C394E0 /* WMVerticalCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMVerticalCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +125,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E781D90C17DEF71E0005DD2E /* MapKit.framework in Frameworks */,
+				E781D8CF17DEF3810005DD2E /* CoreText.framework in Frameworks */,
+				E781D79917DEE3F10005DD2E /* OpenGLES.framework in Frameworks */,
+				E781D74C17DEE31E0005DD2E /* libz.dylib in Frameworks */,
+				E781D74A17DEE30F0005DD2E /* CoreTelephony.framework in Frameworks */,
+				E781D74817DEE3030005DD2E /* SystemConfiguration.framework in Frameworks */,
+				E781D74617DEE2F50005DD2E /* QuartzCore.framework in Frameworks */,
 				E7C4D57917DD9B2D001A6375 /* CoreLocation.framework in Frameworks */,
-				E7C4D57517DD9AD9001A6375 /* MapKit.framework in Frameworks */,
 				E7C4D56B17DD9990001A6375 /* libWMLibrary.a in Frameworks */,
 				E7C4D52117DD2114001A6375 /* UIKit.framework in Frameworks */,
 				E7C4D52317DD2114001A6375 /* Foundation.framework in Frameworks */,
@@ -119,6 +143,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E781D74417DEE2B20005DD2E /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
 		E7C4D51417DD2114001A6375 = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +170,12 @@
 		E7C4D51F17DD2114001A6375 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E781D8CE17DEF3810005DD2E /* CoreText.framework */,
+				E781D79817DEE3F10005DD2E /* OpenGLES.framework */,
+				E781D74B17DEE31E0005DD2E /* libz.dylib */,
+				E781D74917DEE30F0005DD2E /* CoreTelephony.framework */,
+				E781D74717DEE3030005DD2E /* SystemConfiguration.framework */,
+				E781D74517DEE2F50005DD2E /* QuartzCore.framework */,
 				E7C4D57817DD9B2D001A6375 /* CoreLocation.framework */,
 				E7C4D57417DD9AD9001A6375 /* MapKit.framework */,
 				E7C4D56A17DD9990001A6375 /* libWMLibrary.a */,
@@ -152,11 +189,12 @@
 		E7C4D52617DD2114001A6375 /* wMap */ = {
 			isa = PBXGroup;
 			children = (
+				E781D74417DEE2B20005DD2E /* Tool */,
 				E7C4D55117DD9370001A6375 /* Controller */,
 				E7C4D54217DD91B6001A6375 /* Modal */,
 				E7C4D54317DD91B6001A6375 /* View */,
 				E7C4D52F17DD2114001A6375 /* WMAppDelegate.h */,
-				E7C4D53017DD2114001A6375 /* WMAppDelegate.m */,
+				E7C4D53017DD2114001A6375 /* WMAppDelegate.mm */,
 				E7C4D52717DD2114001A6375 /* Supporting Files */,
 				E7C4D53D17DD2149001A6375 /* Resources */,
 			);
@@ -246,6 +284,8 @@
 				E7C4D56517DD943D001A6375 /* WMShowView.m */,
 				E7C4D57A17DD9BF2001A6375 /* WMNavigationBar.h */,
 				E7C4D57B17DD9BF3001A6375 /* WMNavigationBar.m */,
+				E7EC314617E6015D00C394E0 /* WMVerticalCollectionViewCell.h */,
+				E7EC314717E6015D00C394E0 /* WMVerticalCollectionViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -256,11 +296,13 @@
 				E7C4D55217DD937A001A6375 /* WMTabBarViewController.h */,
 				E7C4D55317DD937A001A6375 /* WMTabBarViewController.m */,
 				E7C4D55517DD93F5001A6375 /* WMBuildingViewController.h */,
-				E7C4D55617DD93F5001A6375 /* WMBuildingViewController.m */,
+				E7C4D55617DD93F5001A6375 /* WMBuildingViewController.mm */,
 				E7C4D55817DD93FE001A6375 /* WMMapViewController.h */,
 				E7C4D55917DD93FE001A6375 /* WMMapViewController.m */,
 				E7C4D55B17DD9407001A6375 /* WMShowViewController.h */,
 				E7C4D55C17DD9407001A6375 /* WMShowViewController.m */,
+				E7EC314317E5FE0100C394E0 /* WMVerticalCollectionLayout.h */,
+				E7EC314417E5FE0100C394E0 /* WMVerticalCollectionLayout.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -351,15 +393,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7C4D52D17DD2114001A6375 /* main.m in Sources */,
-				E7C4D53117DD2114001A6375 /* WMAppDelegate.m in Sources */,
+				E7C4D53117DD2114001A6375 /* WMAppDelegate.mm in Sources */,
 				E7C4D55417DD937A001A6375 /* WMTabBarViewController.m in Sources */,
-				E7C4D55717DD93F5001A6375 /* WMBuildingViewController.m in Sources */,
+				E7C4D55717DD93F5001A6375 /* WMBuildingViewController.mm in Sources */,
 				E7C4D55A17DD93FE001A6375 /* WMMapViewController.m in Sources */,
 				E7C4D55D17DD9407001A6375 /* WMShowViewController.m in Sources */,
 				E7C4D56017DD941A001A6375 /* WMBuildingView.m in Sources */,
 				E7C4D56317DD9431001A6375 /* WMMapView.m in Sources */,
 				E7C4D56617DD943D001A6375 /* WMShowView.m in Sources */,
 				E7C4D57C17DD9BF3001A6375 /* WMNavigationBar.m in Sources */,
+				E7EC314517E5FE0100C394E0 /* WMVerticalCollectionLayout.m in Sources */,
+				E7EC314817E6015D00C394E0 /* WMVerticalCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,12 +480,27 @@
 		E7C4D53B17DD2114001A6375 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LIBRARY = "compiler-default";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "wMap/wMap-Prefix.pch";
 				HEADER_SEARCH_PATHS = "../WMLibrary/WMLibrary/**";
 				INFOPLIST_FILE = "wMap/wMap-Info.plist";
-				OTHER_LDFLAGS = "-all_load";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/wMap/Extern/MASearchKit/lib\"",
+					"\"$(SRCROOT)/wMap/Extern/MAMapKit/lib\"",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-IMAMapKit",
+					"-all_load",
+					"-IMASearchKit",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -449,12 +508,27 @@
 		E7C4D53C17DD2114001A6375 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LIBRARY = "compiler-default";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "wMap/wMap-Prefix.pch";
 				HEADER_SEARCH_PATHS = "../WMLibrary/WMLibrary/**";
 				INFOPLIST_FILE = "wMap/wMap-Info.plist";
-				OTHER_LDFLAGS = "-all_load";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/wMap/Extern/MASearchKit/lib\"",
+					"\"$(SRCROOT)/wMap/Extern/MAMapKit/lib\"",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-IMAMapKit",
+					"-all_load",
+					"-IMASearchKit",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

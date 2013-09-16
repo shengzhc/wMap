@@ -18,8 +18,8 @@ typedef enum
     ICAlignmentOptionsRight         = 1 << 1,
     ICAlignmentOptionsTop           = 1 << 2,
     ICAlignmentOptionsBottom        = 1 << 3,
-    ICAlignmentOptionsHorizontalCenter = 1 << 4,
-    ICAlignmentOptionsVerticalCenter    = 1 << 5
+    WMAlignmentOptionsHorizontalCenter = 1 << 4,
+    WMAlignmentOptionsVerticalCenter    = 1 << 5
 } ICAlignmentOptions;
 
 CGRect ICSizeAlignInFrame(CGSize size, CGRect frame, CGSize offset, ICAlignmentOptions options);

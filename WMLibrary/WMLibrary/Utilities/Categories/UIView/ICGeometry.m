@@ -26,7 +26,7 @@ CGRect ICSizeAlignInFrame(CGSize size, CGRect frame, CGSize offset, ICAlignmentO
     {
         xOrigin = frame.size.width - size.width - offset.width;
     }
-    else if (options & ICAlignmentOptionsHorizontalCenter)
+    else if (options & WMAlignmentOptionsHorizontalCenter)
     {
         xOrigin = (frame.size.width - size.width)/2.0;
     }
@@ -43,7 +43,7 @@ CGRect ICSizeAlignInFrame(CGSize size, CGRect frame, CGSize offset, ICAlignmentO
     {
         yOrigin = frame.size.height - size.height - offset.height;
     }
-    else if (options & ICAlignmentOptionsVerticalCenter)
+    else if (options & WMAlignmentOptionsVerticalCenter)
     {
         yOrigin = (frame.size.height - size.height)/2.0;
     }
