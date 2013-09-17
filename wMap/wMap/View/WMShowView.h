@@ -8,6 +8,6 @@
 
 #import "WMView.h"
 
-@interface WMShowView : WMView
+@interface WMShowView : WMView < UITableViewDataSource, UITableViewDelegate >
 
 @end

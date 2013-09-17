@@ -13,7 +13,7 @@
 
 - (CGRect)alignedRectInSuperviewForSize:(CGSize)size
                                  offset:(CGSize)offset
-                                options:(ICAlignmentOptions)options;
+                                options:(WMAlignmentOptions)options;
 
 - (NSUInteger)horizontalEnding;
 - (NSUInteger)verticalEnding;

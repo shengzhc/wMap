@@ -14,15 +14,15 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-CGRect ICSizeAlignInFrame(CGSize size, CGRect frame, CGSize offset, ICAlignmentOptions options)
+CGRect ICSizeAlignInFrame(CGSize size, CGRect frame, CGSize offset, WMAlignmentOptions options)
 {
     CGFloat xOrigin, yOrigin;
     
-    if (options & ICAlignmentOptionsLeft)
+    if (options & WMAlignmentOptionsLeft)
     {
         xOrigin = 0 + offset.width;
     }
-    else if (options & ICAlignmentOptionsRight)
+    else if (options & WMAlignmentOptionsRight)
     {
         xOrigin = frame.size.width - size.width - offset.width;
     }
@@ -35,11 +35,11 @@ CGRect ICSizeAlignInFrame(CGSize size, CGRect frame, CGSize offset, ICAlignmentO
         xOrigin = 0 + offset.width;
     }
     
-    if (options & ICAlignmentOptionsTop)
+    if (options & WMAlignmentOptionsTop)
     {
         yOrigin = 0 + offset.height;
     }
-    else if (options & ICAlignmentOptionsBottom)
+    else if (options & WMAlignmentOptionsBottom)
     {
         yOrigin = frame.size.height - size.height - offset.height;
     }
@@ -56,18 +56,18 @@ CGRect ICSizeAlignInFrame(CGSize size, CGRect frame, CGSize offset, ICAlignmentO
                       size.width, size.height);
 }
 
-CGRect ICRectAlignInFrame(CGRect rect, CGRect frame, CGSize offset, ICAlignmentOptions options)
+CGRect ICRectAlignInFrame(CGRect rect, CGRect frame, CGSize offset, WMAlignmentOptions options)
 {
     return ICSizeAlignInFrame(rect.size, frame, offset, options);
 }
 
-CGFloat ICAlignmentCoordinateWithRelativeFrameHorizontal(CGRect frame, CGFloat padding, ICAlignmentOptions options)
+CGFloat ICAlignmentCoordinateWithRelativeFrameHorizontal(CGRect frame, CGFloat padding, WMAlignmentOptions options)
 {
-    if (options & ICAlignmentOptionsLeft)
+    if (options & WMAlignmentOptionsLeft)
     {
         return frame.origin.x - padding;
     }
-    else if (options & ICAlignmentOptionsRight)
+    else if (options & WMAlignmentOptionsRight)
     {
         return frame.origin.x + frame.size.width + padding;
     }
@@ -75,13 +75,13 @@ CGFloat ICAlignmentCoordinateWithRelativeFrameHorizontal(CGRect frame, CGFloat p
     return frame.origin.x + frame.size.width + padding;
 }
 
-CGFloat ICAlignmentCoordinateWithRelativeFrameVertical(CGRect frame, CGFloat padding, ICAlignmentOptions options)
+CGFloat ICAlignmentCoordinateWithRelativeFrameVertical(CGRect frame, CGFloat padding, WMAlignmentOptions options)
 {
-    if (options & ICAlignmentOptionsTop)
+    if (options & WMAlignmentOptionsTop)
     {
         return frame.origin.y - padding;
     }
-    else if (options & ICAlignmentOptionsBottom)
+    else if (options & WMAlignmentOptionsBottom)
     {
         return frame.origin.y + frame.size.height + padding;
     }

@@ -14,7 +14,7 @@
 + (UIImageView *)imageViewWithImageNamed:(NSString *)imageName;
 
 - (CGRect)alignedRectInSuperviewForImageWithOffset:(CGSize)offset
-                                           options:(ICAlignmentOptions)options;
+                                           options:(WMAlignmentOptions)options;
 
 - (void)setImageViewBoundsToImage;
 

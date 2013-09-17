@@ -16,7 +16,7 @@
 
 - (CGRect)alignedRectInSuperviewForSize:(CGSize)size
                                  offset:(CGSize)offset
-                                options:(ICAlignmentOptions)options
+                                options:(WMAlignmentOptions)options
 {
     return ICSizeAlignInFrame(size, [[self superview] bounds], offset, options);
 }

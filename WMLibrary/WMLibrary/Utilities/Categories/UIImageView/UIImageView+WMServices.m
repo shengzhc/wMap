@@ -31,7 +31,7 @@
 }
 
 - (CGRect)alignedRectInSuperviewForImageWithOffset:(CGSize)offset
-                                           options:(ICAlignmentOptions)options
+                                           options:(WMAlignmentOptions)options
 {
     return ICSizeAlignInFrame(self.image.size,
                               [[self superview] bounds],
