@@ -54,6 +54,7 @@
 		E7C4D58517DD9FBF001A6375 /* navigation_bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7C4D58417DD9FBE001A6375 /* navigation_bar@2x.png */; };
 		E7EC314517E5FE0100C394E0 /* WMVerticalCollectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E7EC314417E5FE0100C394E0 /* WMVerticalCollectionLayout.m */; };
 		E7EC314817E6015D00C394E0 /* WMVerticalCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E7EC314717E6015D00C394E0 /* WMVerticalCollectionViewCell.m */; };
+		E7EC314B17E7AE0500C394E0 /* WMRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = E7EC314A17E7AE0500C394E0 /* WMRepository.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -118,6 +119,8 @@
 		E7EC314417E5FE0100C394E0 /* WMVerticalCollectionLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMVerticalCollectionLayout.m; sourceTree = "<group>"; };
 		E7EC314617E6015D00C394E0 /* WMVerticalCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMVerticalCollectionViewCell.h; sourceTree = "<group>"; };
 		E7EC314717E6015D00C394E0 /* WMVerticalCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMVerticalCollectionViewCell.m; sourceTree = "<group>"; };
+		E7EC314917E7AE0500C394E0 /* WMRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMRepository.h; sourceTree = "<group>"; };
+		E7EC314A17E7AE0500C394E0 /* WMRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMRepository.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +272,8 @@
 		E7C4D54217DD91B6001A6375 /* Modal */ = {
 			isa = PBXGroup;
 			children = (
+				E7EC314917E7AE0500C394E0 /* WMRepository.h */,
+				E7EC314A17E7AE0500C394E0 /* WMRepository.m */,
 			);
 			path = Modal;
 			sourceTree = "<group>";
@@ -404,6 +409,7 @@
 				E7C4D57C17DD9BF3001A6375 /* WMNavigationBar.m in Sources */,
 				E7EC314517E5FE0100C394E0 /* WMVerticalCollectionLayout.m in Sources */,
 				E7EC314817E6015D00C394E0 /* WMVerticalCollectionViewCell.m in Sources */,
+				E7EC314B17E7AE0500C394E0 /* WMRepository.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

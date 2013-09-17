@@ -69,4 +69,13 @@ static NSString *collectionViewCellIdentifier = @"VerticalCollectionViewCellIden
     return cell;
 }
 
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    UICollectionViewLayoutAttributes *attribute = [collectionView layoutAttributesForItemAtIndexPath:indexPath];
+    if (attribute.alpha > 0.5)
+    {
+        NSLog(@"%@", NSStringFromSelector(_cmd));
+    }
+}
+
 @end

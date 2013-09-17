@@ -8,12 +8,13 @@
 
 #import "WMVerticalCollectionLayout.h"
 
-#define CELL_PADDING 20
+#define CELL_PADDING 30
+#define THREAD_OFFSETY 200.0
+#define BASE_ALPHA .3
 
 @interface WMVerticalCollectionLayout ()
 
 @property (nonatomic, strong) NSMutableArray *attributes;
-@property (nonatomic, strong) NSIndexPath *highlightIndexPath;
 
 @end
 
@@ -26,7 +27,6 @@
     if (self)
     {
         self.attributes = [NSMutableArray new];
-        _highlightIndexPath = [NSIndexPath indexPathForRow:0 inSection:0];
     }
     
     return self;
@@ -34,7 +34,7 @@
 
 - (CGSize)cellSize
 {
-    return CGSizeMake(300, 100);
+    return CGSizeMake(280, 150);
 }
 
 - (void)prepareLayout
@@ -42,11 +42,14 @@
     [super prepareLayout];
     [self.attributes removeAllObjects];
     CGFloat midX = CGRectGetMidX(self.collectionView.frame);
+    CGFloat midY = CGRectGetMidY(self.collectionView.frame);
+    
     for (NSInteger i=0; i<[self.collectionView numberOfItemsInSection:0]; i++)
     {
         UICollectionViewLayoutAttributes *attribute = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:[NSIndexPath indexPathForRow:i inSection:0]];
-        attribute.center = CGPointMake(midX, CELL_PADDING + [self cellSize].height / 2.0 + ([self cellSize].height + CELL_PADDING) * i);
+        attribute.center = CGPointMake(midX, midY);
         attribute.size = [self cellSize];
+        midY += CELL_PADDING + [self cellSize].height;
         [self.attributes addObject:attribute];
     }
 }
@@ -54,7 +57,7 @@
 - (CGSize)collectionViewContentSize
 {
     NSInteger counts = [self.collectionView numberOfItemsInSection:0];
-    return CGSizeMake(self.collectionView.bounds.size.width, counts * (CELL_PADDING + [self cellSize].height));
+    return CGSizeMake(self.collectionView.bounds.size.width, counts * (CELL_PADDING + [self cellSize].height) + self.collectionView.bounds.size.height - [self cellSize].height - CELL_PADDING);
 }
 
 
@@ -78,13 +81,18 @@
     {
         if (CGRectIntersectsRect(rect, attribute.frame))
         {
-            if (fabs(attribute.center.y - center.y) < 10.0)
+            float offsetY = fabsf(attribute.center.y - center.y);
+            if (offsetY < THREAD_OFFSETY)
             {
-                attribute.transform3D = CATransform3DScale(attribute.transform3D, 0.8, .8, 1.0);
+                float factor = (THREAD_OFFSETY - offsetY)/THREAD_OFFSETY;
+                CATransform3D transform = CATransform3DScale(CATransform3DIdentity, (1+factor*.1), (1+factor*.1), 1.0);
+                attribute.transform3D = transform;
+                attribute.alpha = BASE_ALPHA + factor * .8;
             }
             else
             {
                 attribute.transform3D = CATransform3DIdentity;
+                attribute.alpha = BASE_ALPHA;
             }
             
             [attributes addObject:attribute];

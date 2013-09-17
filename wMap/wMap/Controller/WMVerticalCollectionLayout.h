@@ -10,6 +10,4 @@
 
 @interface WMVerticalCollectionLayout : UICollectionViewLayout
 
-- (void)increaseHighLightItem:(NSUInteger)offset;
-
 @end
