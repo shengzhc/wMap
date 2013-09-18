@@ -60,6 +60,10 @@
 		E7EC315417E82BDA00C394E0 /* show_alarm@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7EC315017E82BDA00C394E0 /* show_alarm@2x.png */; };
 		E7EC315517E82BDA00C394E0 /* show_location.png in Resources */ = {isa = PBXBuildFile; fileRef = E7EC315117E82BDA00C394E0 /* show_location.png */; };
 		E7EC315617E82BDA00C394E0 /* show_location@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7EC315217E82BDA00C394E0 /* show_location@2x.png */; };
+		E7EC315917E9698100C394E0 /* show_clock.png in Resources */ = {isa = PBXBuildFile; fileRef = E7EC315717E9698000C394E0 /* show_clock.png */; };
+		E7EC315A17E9698100C394E0 /* show_clock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7EC315817E9698000C394E0 /* show_clock@2x.png */; };
+		E7EC315D17E973A500C394E0 /* WMClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7EC315C17E973A500C394E0 /* WMClockView.m */; };
+		E7EC316017E9754E00C394E0 /* WMClockViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E7EC315F17E9754D00C394E0 /* WMClockViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -132,6 +136,12 @@
 		E7EC315017E82BDA00C394E0 /* show_alarm@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "show_alarm@2x.png"; sourceTree = "<group>"; };
 		E7EC315117E82BDA00C394E0 /* show_location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = show_location.png; sourceTree = "<group>"; };
 		E7EC315217E82BDA00C394E0 /* show_location@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "show_location@2x.png"; sourceTree = "<group>"; };
+		E7EC315717E9698000C394E0 /* show_clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = show_clock.png; sourceTree = "<group>"; };
+		E7EC315817E9698000C394E0 /* show_clock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "show_clock@2x.png"; sourceTree = "<group>"; };
+		E7EC315B17E973A400C394E0 /* WMClockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMClockView.h; sourceTree = "<group>"; };
+		E7EC315C17E973A500C394E0 /* WMClockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMClockView.m; sourceTree = "<group>"; };
+		E7EC315E17E9754D00C394E0 /* WMClockViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMClockViewCell.h; sourceTree = "<group>"; };
+		E7EC315F17E9754D00C394E0 /* WMClockViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMClockViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,6 +265,8 @@
 		E7C4D53F17DD2149001A6375 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				E7EC315717E9698000C394E0 /* show_clock.png */,
+				E7EC315817E9698000C394E0 /* show_clock@2x.png */,
 				E7EC314F17E82BDA00C394E0 /* show_alarm.png */,
 				E7EC315017E82BDA00C394E0 /* show_alarm@2x.png */,
 				E7EC315117E82BDA00C394E0 /* show_location.png */,
@@ -308,6 +320,10 @@
 				E7EC314717E6015D00C394E0 /* WMVerticalCollectionViewCell.m */,
 				E7EC314C17E8209700C394E0 /* WMShowCell.h */,
 				E7EC314D17E8209700C394E0 /* WMShowCell.m */,
+				E7EC315B17E973A400C394E0 /* WMClockView.h */,
+				E7EC315C17E973A500C394E0 /* WMClockView.m */,
+				E7EC315E17E9754D00C394E0 /* WMClockViewCell.h */,
+				E7EC315F17E9754D00C394E0 /* WMClockViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -408,6 +424,8 @@
 				E7EC315417E82BDA00C394E0 /* show_alarm@2x.png in Resources */,
 				E7EC315517E82BDA00C394E0 /* show_location.png in Resources */,
 				E7EC315617E82BDA00C394E0 /* show_location@2x.png in Resources */,
+				E7EC315917E9698100C394E0 /* show_clock.png in Resources */,
+				E7EC315A17E9698100C394E0 /* show_clock@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +450,8 @@
 				E7EC314817E6015D00C394E0 /* WMVerticalCollectionViewCell.m in Sources */,
 				E7EC314B17E7AE0500C394E0 /* WMRepository.m in Sources */,
 				E7EC314E17E8209800C394E0 /* WMShowCell.m in Sources */,
+				E7EC315D17E973A500C394E0 /* WMClockView.m in Sources */,
+				E7EC316017E9754E00C394E0 /* WMClockViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

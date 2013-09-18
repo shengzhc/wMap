@@ -34,6 +34,12 @@
 }
 
 
+- (NSString *)titleString
+{
+    return @"地标";
+}
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

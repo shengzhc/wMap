@@ -10,6 +10,7 @@
 #import "WMView.h"
 #import "UIFont+WMFont.h"
 #import "UIImageView+WMServices.h"
+#import "UILabel+WMServices.h"
 
 @interface WMViewController ()
 @property (nonatomic, strong) WMView *view;
@@ -53,7 +54,18 @@
 
 - (UILabel *)titleLabel
 {
-    return nil;
+    UILabel *label = [UILabel labelWithFrame:CGRectZero
+                                        text:[self titleString]
+                                   alignment:NSTextAlignmentCenter
+                                        font:[UIFont icBoldFontWithSize:16]
+                                   textColor:[UIColor  blackColor]];
+    [label sizeToFit];
+    return label;
+}
+
+- (NSString *)titleString
+{
+    return @"";
 }
 
 

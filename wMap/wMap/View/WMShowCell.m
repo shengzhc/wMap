@@ -146,7 +146,6 @@
 
 - (void)alertButtonClicked:(id)sender
 {
-    NSLog(@"%@", NSStringFromSelector(_cmd));
 }
 
 - (void)locationButtonClicked:(id)sender
