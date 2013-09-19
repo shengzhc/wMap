@@ -10,6 +10,8 @@
 #import "WMShowView.h"
 #import "WMClockView.h"
 
+#define CLOCK_TABLE_HEIGHT 200
+
 @interface WMShowViewController ()
 
 @property (nonatomic, strong) WMClockView *clockView;
@@ -71,14 +73,27 @@
 
 - (void)clockButtonClicked:(id)sender
 {
-    CGFloat height = 300.0;
-    self.clockView.tableView.frame = CGRectMake(0, self.clockView.bounds.size.height, self.clockView.bounds.size.width, height);
+    self.clockView.tableView.frame = CGRectMake(0, self.clockView.bounds.size.height, self.clockView.bounds.size.width, CLOCK_TABLE_HEIGHT);
     [[UIApplication sharedApplication].keyWindow addSubview:self.clockView];
     __block WMShowViewController *this = self;
     [UIView animateWithDuration:.2
                      animations:^
     {
-        this.clockView.tableView.frame = CGRectMake(0, [UIScreen mainScreen].bounds.size.height - height, [UIScreen mainScreen].bounds.size.width, height);
+        this.clockView.tableView.frame = CGRectMake(0, [UIScreen mainScreen].bounds.size.height - CLOCK_TABLE_HEIGHT, [UIScreen mainScreen].bounds.size.width, CLOCK_TABLE_HEIGHT);
+    }];
+}
+
+- (void)didClickedCancelCell:(id)sender
+{
+    [UIView animateWithDuration:.2
+                     animations:^
+    {
+        _clockView.tableView.frame = CGRectMake(0, [UIScreen mainScreen].bounds.size.height, [UIScreen mainScreen].bounds.size.width, CLOCK_TABLE_HEIGHT);
+    }
+                     completion:^(BOOL finished)
+    {
+        [_clockView removeFromSuperview];
+        _clockView = nil;
     }];
 }
 

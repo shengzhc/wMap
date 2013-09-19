@@ -16,26 +16,26 @@
 + (UILabel *)labelWithText:(NSString *)text;
 + (UILabel *)labelWithTextColor:(UIColor *)color;
 + (UILabel *)labelWithTextColor:(UIColor *)color
-                      alignment:(UITextAlignment)alignment;
+                      alignment:(NSTextAlignment)alignment;
 
 + (UILabel *)labelWithText:(NSString *)text
                   font:(UIFont *)font;
 
 + (UILabel *)labelWithFrame:(CGRect)frame
                        text:(NSString *)text
-                  alignment:(UITextAlignment)alignment;
+                  alignment:(NSTextAlignment)alignment;
 + (UILabel *)labelWithFont:(UIFont *)font
                  textColor:(UIColor *)textColor;
-+ (UILabel *)labelWithAlignment:(UITextAlignment)alignment
++ (UILabel *)labelWithAlignment:(NSTextAlignment)alignment
                            font:(UIFont *)font
                       textColor:(UIColor *)textColor;
 + (UILabel *)labelWithFrame:(CGRect)inputFrame
                        text:(NSString *)text
-                  alignment:(UITextAlignment)alignment
+                  alignment:(NSTextAlignment)alignment
                   textColor:(UIColor *)textColor;
 + (UILabel *)labelWithFrame:(CGRect)frame
                        text:(NSString *)text
-                  alignment:(UITextAlignment)alignment
+                  alignment:(NSTextAlignment)alignment
                        font:(UIFont *)font
                   textColor:(UIColor *)textColor;
 

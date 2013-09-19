@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E72EC55017EADCA500683AA9 /* WMCancelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E72EC54F17EADCA500683AA9 /* WMCancelCell.m */; };
+		E72EC55317EAE3B800683AA9 /* cell_selected_background.png in Resources */ = {isa = PBXBuildFile; fileRef = E72EC55117EAE3B800683AA9 /* cell_selected_background.png */; };
+		E72EC55417EAE3B800683AA9 /* cell_selected_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E72EC55217EAE3B800683AA9 /* cell_selected_background@2x.png */; };
+		E72EC55617EAE4D500683AA9 /* drop_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = E72EC55517EAE4D500683AA9 /* drop_shadow.png */; };
 		E781D72E17DE70C30005DD2E /* tab_university.png in Resources */ = {isa = PBXBuildFile; fileRef = E781D72C17DE70C30005DD2E /* tab_university.png */; };
 		E781D72F17DE70C30005DD2E /* tab_university@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E781D72D17DE70C30005DD2E /* tab_university@2x.png */; };
 		E781D73217DEC2360005DD2E /* tab_university_press.png in Resources */ = {isa = PBXBuildFile; fileRef = E781D73017DEC2360005DD2E /* tab_university_press.png */; };
@@ -67,6 +71,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E72EC54E17EADCA500683AA9 /* WMCancelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMCancelCell.h; sourceTree = "<group>"; };
+		E72EC54F17EADCA500683AA9 /* WMCancelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMCancelCell.m; sourceTree = "<group>"; };
+		E72EC55117EAE3B800683AA9 /* cell_selected_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cell_selected_background.png; sourceTree = "<group>"; };
+		E72EC55217EAE3B800683AA9 /* cell_selected_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cell_selected_background@2x.png"; sourceTree = "<group>"; };
+		E72EC55517EAE4D500683AA9 /* drop_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drop_shadow.png; sourceTree = "<group>"; };
 		E781D72C17DE70C30005DD2E /* tab_university.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_university.png; sourceTree = "<group>"; };
 		E781D72D17DE70C30005DD2E /* tab_university@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_university@2x.png"; sourceTree = "<group>"; };
 		E781D73017DEC2360005DD2E /* tab_university_press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_university_press.png; sourceTree = "<group>"; };
@@ -265,6 +274,9 @@
 		E7C4D53F17DD2149001A6375 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				E72EC55517EAE4D500683AA9 /* drop_shadow.png */,
+				E72EC55117EAE3B800683AA9 /* cell_selected_background.png */,
+				E72EC55217EAE3B800683AA9 /* cell_selected_background@2x.png */,
 				E7EC315717E9698000C394E0 /* show_clock.png */,
 				E7EC315817E9698000C394E0 /* show_clock@2x.png */,
 				E7EC314F17E82BDA00C394E0 /* show_alarm.png */,
@@ -324,6 +336,8 @@
 				E7EC315C17E973A500C394E0 /* WMClockView.m */,
 				E7EC315E17E9754D00C394E0 /* WMClockViewCell.h */,
 				E7EC315F17E9754D00C394E0 /* WMClockViewCell.m */,
+				E72EC54E17EADCA500683AA9 /* WMCancelCell.h */,
+				E72EC54F17EADCA500683AA9 /* WMCancelCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -372,7 +386,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = WM;
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Bros;
 			};
 			buildConfigurationList = E7C4D51817DD2114001A6375 /* Build configuration list for PBXProject "wMap" */;
@@ -399,8 +413,10 @@
 			files = (
 				E7C4D52B17DD2114001A6375 /* InfoPlist.strings in Resources */,
 				E7C4D53317DD2114001A6375 /* Default.png in Resources */,
+				E72EC55417EAE3B800683AA9 /* cell_selected_background@2x.png in Resources */,
 				E7C4D53517DD2114001A6375 /* Default@2x.png in Resources */,
 				E7C4D53717DD2114001A6375 /* Default-568h@2x.png in Resources */,
+				E72EC55617EAE4D500683AA9 /* drop_shadow.png in Resources */,
 				E7C4D54917DD920A001A6375 /* Roboto-Bold.ttf in Resources */,
 				E7C4D54A17DD920A001A6375 /* Roboto-Light.ttf in Resources */,
 				E7C4D54B17DD920A001A6375 /* Roboto-Medium.ttf in Resources */,
@@ -408,6 +424,7 @@
 				E7C4D54D17DD920A001A6375 /* Roboto-Thin.ttf in Resources */,
 				E7C4D58017DD9C98001A6375 /* navigation_bar.png in Resources */,
 				E7C4D58517DD9FBF001A6375 /* navigation_bar@2x.png in Resources */,
+				E72EC55317EAE3B800683AA9 /* cell_selected_background.png in Resources */,
 				E781D72E17DE70C30005DD2E /* tab_university.png in Resources */,
 				E781D72F17DE70C30005DD2E /* tab_university@2x.png in Resources */,
 				E781D73217DEC2360005DD2E /* tab_university_press.png in Resources */,
@@ -450,6 +467,7 @@
 				E7EC314817E6015D00C394E0 /* WMVerticalCollectionViewCell.m in Sources */,
 				E7EC314B17E7AE0500C394E0 /* WMRepository.m in Sources */,
 				E7EC314E17E8209800C394E0 /* WMShowCell.m in Sources */,
+				E72EC55017EADCA500683AA9 /* WMCancelCell.m in Sources */,
 				E7EC315D17E973A500C394E0 /* WMClockView.m in Sources */,
 				E7EC316017E9754E00C394E0 /* WMClockViewCell.m in Sources */,
 			);
@@ -528,7 +546,6 @@
 		E7C4D53B17DD2114001A6375 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_CXX_LIBRARY = "compiler-default";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "wMap/wMap-Prefix.pch";
@@ -556,7 +573,6 @@
 		E7C4D53C17DD2114001A6375 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_CXX_LIBRARY = "compiler-default";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "wMap/wMap-Prefix.pch";

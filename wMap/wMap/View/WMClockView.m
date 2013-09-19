@@ -8,8 +8,10 @@
 
 #import "WMClockView.h"
 #import "WMClockViewCell.h"
+#import "WMCancelCell.h"
 
 #define WMClockCellIdentifier @"WMClockCellIdentifier"
+#define WMCancelCellIdentifier @"WMCancelCellIdentifier"
 
 @interface WMClockView ()
 
@@ -30,6 +32,8 @@
         self.tableView.delegate = self;
         [self.tableView registerClass:[WMClockViewCell class]
                forCellReuseIdentifier:WMClockCellIdentifier];
+        [self.tableView registerClass:[WMCancelCell class]
+               forCellReuseIdentifier:WMCancelCellIdentifier];
         [self addSubview:self.tableView];
     }
     
@@ -48,13 +52,42 @@
 ////////////////////////////////////////////////////////////////////////
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 5;
+    return 5 + 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    WMClockViewCell *cell = (WMClockViewCell *)[tableView dequeueReusableCellWithIdentifier:WMClockCellIdentifier];
-    return cell;
+    if (indexPath.row == [tableView numberOfRowsInSection:indexPath.section] - 1)
+    {
+        WMCancelCell *cell = (WMCancelCell *)[tableView dequeueReusableCellWithIdentifier:WMCancelCellIdentifier];
+        cell.textLabel.text = @"Cancel";
+        
+        return cell;
+    }
+    else
+    {
+        WMClockViewCell *cell = (WMClockViewCell *)[tableView dequeueReusableCellWithIdentifier:WMClockCellIdentifier];
+        return cell;
+    }
+}
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    if (indexPath.row == [tableView numberOfRowsInSection:indexPath.section] - 1)
+    {
+        if ([self.delegate respondsToSelector:@selector(didClickedCancelCell:)])
+        {
+            [self.delegate performSelector:@selector(didClickedCancelCell:)
+                                withObject:self];
+        }
+    }
+    else
+    {
+        
+    }
 }
 
 @end

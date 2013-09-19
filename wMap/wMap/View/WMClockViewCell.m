@@ -27,4 +27,9 @@
     [super layoutSubviews];
 }
 
+- (UIView *)selectedViewForCell
+{
+    return [UIImageView imageViewWithImageNamed:@"cell_selected_background"];
+}
+
 @end

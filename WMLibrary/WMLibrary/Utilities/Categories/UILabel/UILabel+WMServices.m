@@ -36,7 +36,7 @@
 }
 
 + (UILabel *)labelWithTextColor:(UIColor *)color
-                      alignment:(UITextAlignment)alignment
+                      alignment:(NSTextAlignment)alignment
 {
     return [self labelWithFrame:CGRectZero
                            text:@""
@@ -59,7 +59,7 @@
 
 + (UILabel *)labelWithFrame:(CGRect)frame
                        text:(NSString *)text
-                  alignment:(UITextAlignment)alignment
+                  alignment:(NSTextAlignment)alignment
 {
     return [self labelWithFrame:frame
                            text:text
@@ -68,7 +68,7 @@
                       textColor:[UIColor blackColor]];
 }
 
-+ (UILabel *)labelWithAlignment:(UITextAlignment)alignment
++ (UILabel *)labelWithAlignment:(NSTextAlignment)alignment
                            font:(UIFont *)font
                       textColor:(UIColor *)textColor
 {
@@ -81,7 +81,7 @@
 
 + (UILabel *)labelWithFrame:(CGRect)frame
                        text:(NSString *)text
-                  alignment:(UITextAlignment)alignment
+                  alignment:(NSTextAlignment)alignment
                   textColor:(UIColor *)textColor
 {
     return [self labelWithFrame:frame
@@ -94,7 +94,7 @@
 
 + (UILabel *)labelWithFrame:(CGRect)frame
                        text:(NSString *)text
-                  alignment:(UITextAlignment)alignment
+                  alignment:(NSTextAlignment)alignment
                        font:(UIFont *)font
                   textColor:(UIColor *)textColor
 {
