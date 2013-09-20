@@ -52,6 +52,7 @@
         
         UIPanGestureRecognizer *panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self
                                                                                                action:@selector(handlePanGestureRecognizer:)];
+        panGestureRecognizer.delegate = self;
         [self addGestureRecognizer:panGestureRecognizer];
     }
     return self;
@@ -64,6 +65,16 @@
     self.alarmButton.center = CGPointMake(self.bounds.size.width+EXTRA_PADDING/2.0, self.bounds.size.height/2.0);
 }
 
+- (BOOL)gestureRecognizerShouldBegin:(UIPanGestureRecognizer *)gestureRecognizer
+{
+    CGPoint translation = [gestureRecognizer translationInView:self];
+    if (fabs(translation.x) > fabs(translation.y))
+    {
+        return YES;
+    }
+    
+    return NO;
+}
 
 - (void)handlePanGestureRecognizer:(UIPanGestureRecognizer *)panGestureRecognizer
 {
@@ -129,20 +140,25 @@
 
 - (void)alarmButtonClicked:(id)sender
 {
-    UITableView *tableView = (UITableView *)self.superview;
-    NSIndexPath *indexPath = [tableView indexPathForCell:self];
-    id addedObject = [[WMRepository sharedRepository].shows objectAtIndex:indexPath.row];
-    if (![[WMRepository sharedRepository].scheduleShows containsObject:addedObject])
+    [self moveContentViewCenterToPoint:CGPointMake(CGRectGetMidX(self.bounds), CGRectGetMidY(self.bounds))];
+
+    if ([self.delegate respondsToSelector:@selector(alarmButtonClicked:)])
     {
-        [[WMRepository sharedRepository].scheduleShows addObject:addedObject];
+        [self.delegate performSelector:@selector(alarmButtonClicked:)
+                            withObject:self];
     }
     
-    [self moveContentViewCenterToPoint:CGPointMake(CGRectGetMidX(self.bounds), CGRectGetMidY(self.bounds))];
 }
 
 - (void)locationButtonClicked:(id)sender
 {
-    self.contentView.center = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
+    [self moveContentViewCenterToPoint:CGPointMake(CGRectGetMidX(self.bounds), CGRectGetMidY(self.bounds))];
+
+    if ([self.delegate respondsToSelector:@selector(locationButtonClicked:)])
+    {
+        [self.delegate performSelector:@selector(locationButtonClicked:)
+                            withObject:self];
+    }
 }
 
 

@@ -58,6 +58,7 @@ static NSString *showCellIdentifier = @"ShowCellIdentifier";
 {
     WMShowCell *cell = (WMShowCell *)[tableView dequeueReusableCellWithIdentifier:showCellIdentifier];
     cell.textLabel.text = [[WMRepository sharedRepository].shows objectAtIndex:indexPath.row];
+    cell.delegate = self;
     return cell;
 }
 
@@ -65,6 +66,20 @@ static NSString *showCellIdentifier = @"ShowCellIdentifier";
 {
     return 60.0;
 }
+
+
+- (void)alarmButtonClicked:(id)sender
+{
+    NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
+    
+    id addedObject = [[WMRepository sharedRepository].shows objectAtIndex:indexPath.row];
+    if (![[WMRepository sharedRepository].scheduleShows containsObject:addedObject])
+    {
+        [[WMRepository sharedRepository].scheduleShows addObject:addedObject];
+    }
+}
+
+
 
 
 @end

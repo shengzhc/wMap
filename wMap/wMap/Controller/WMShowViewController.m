@@ -73,22 +73,25 @@
 
 - (void)clockButtonClicked:(id)sender
 {
-    self.clockView.tableView.frame = CGRectMake(0, self.clockView.bounds.size.height, self.clockView.bounds.size.width, CLOCK_TABLE_HEIGHT);
+    __block CGRect frame = [self.clockView adjustTableViewFrame];
+    self.clockView.tableView.frame = CGRectMake(0, self.clockView.bounds.size.height, self.clockView.bounds.size.width, frame.size.height);
     [[UIApplication sharedApplication].keyWindow addSubview:self.clockView];
     __block WMShowViewController *this = self;
     [UIView animateWithDuration:.2
                      animations:^
     {
-        this.clockView.tableView.frame = CGRectMake(0, [UIScreen mainScreen].bounds.size.height - CLOCK_TABLE_HEIGHT, [UIScreen mainScreen].bounds.size.width, CLOCK_TABLE_HEIGHT);
+        this.clockView.tableView.frame = frame;
     }];
 }
 
 - (void)didClickedCancelCell:(id)sender
 {
+    __block CGRect frame = [self.clockView adjustTableViewFrame];
+    __block WMShowViewController *this = self;
     [UIView animateWithDuration:.2
                      animations:^
     {
-        _clockView.tableView.frame = CGRectMake(0, [UIScreen mainScreen].bounds.size.height, [UIScreen mainScreen].bounds.size.width, CLOCK_TABLE_HEIGHT);
+        this.clockView.tableView.frame = CGRectMake(0, this.clockView.bounds.size.height, this.clockView.bounds.size.width, frame.size.height);
     }
                      completion:^(BOOL finished)
     {

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WMClockViewCell : UITableViewCell
+@interface WMClockViewCell : UITableViewCell < UIGestureRecognizerDelegate >
 
 @property (nonatomic, strong) id delegate;
 

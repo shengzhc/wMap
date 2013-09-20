@@ -35,7 +35,7 @@
         
         UIPanGestureRecognizer *panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self
                                                                                                action:@selector(handlePanGestureRecognizer:)];
-        
+        panGestureRecognizer.delegate = self;
         [self addGestureRecognizer:panGestureRecognizer];
         
         self.removeImageView = [UIImageView imageViewWithImageNamed:@"cell_trash"];
@@ -58,6 +58,17 @@
     self.removeImageView.frame = [self.removeImageView alignedRectInSuperviewForSize:self.removeImageView.image.size
                                                                               offset:CGSizeMake(20, 0)
                                                                              options:(WMAlignmentOptionsLeft | WMAlignmentOptionsVerticalCenter)];
+}
+
+- (BOOL)gestureRecognizerShouldBegin:(UIPanGestureRecognizer *)gestureRecognizer
+{
+    CGPoint translation = [gestureRecognizer translationInView:self];
+    if (fabs(translation.x) > fabs(translation.y))
+    {
+        return YES;
+    }
+    
+    return NO;
 }
 
 - (void)handlePanGestureRecognizer:(UIPanGestureRecognizer *)panGestureRecognizer

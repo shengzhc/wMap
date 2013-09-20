@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WMShowCell : UITableViewCell
+@interface WMShowCell : UITableViewCell < UIGestureRecognizerDelegate >
+
+@property (nonatomic, strong) id delegate;
 
 @end

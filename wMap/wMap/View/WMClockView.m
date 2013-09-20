@@ -34,7 +34,6 @@
                forCellReuseIdentifier:WMClockCellIdentifier];
         [self.tableView registerClass:[WMCancelCell class]
                forCellReuseIdentifier:WMCancelCellIdentifier];
-        self.tableView.bounces = NO;
         [self addSubview:self.tableView];
     }
     
@@ -79,7 +78,7 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    if (indexPath.row == [tableView numberOfRowsInSection:indexPath.section] - 1)
+    if ([[tableView cellForRowAtIndexPath:indexPath] isKindOfClass:[WMCancelCell class]])
     {
         if ([self.delegate respondsToSelector:@selector(didClickedCancelCell:)])
         {
@@ -95,5 +94,27 @@
     [[WMRepository sharedRepository].scheduleShows removeObjectAtIndex:indexPath.row];
     [self.tableView deleteRowsAtIndexPaths:[NSArray arrayWithObjects:indexPath, nil]
                           withRowAnimation:UITableViewRowAnimationLeft];
+    
+    WMClockView *this = self;
+    
+    [UIView animateWithDuration:.2
+                     animations:^
+    {
+        this.tableView.frame = [this adjustTableViewFrame];
+    }];
 }
+
+
+- (CGRect)adjustTableViewFrame
+{
+    NSUInteger count = [self.tableView numberOfRowsInSection:0];
+    if (count > 5)
+    {
+        count = 5;
+    }
+    
+    CGFloat height =  count * 44;
+    return CGRectMake(0, self.bounds.size.height - height, self.bounds.size.width, height);
+}
+
 @end
