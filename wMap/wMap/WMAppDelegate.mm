@@ -27,6 +27,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    self.window.bounds = CGRectMake(0, 0, self.window.frame.size.width, self.window.frame.size.height);
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackOpaque animated:YES];
     [self setupTabBarController];
     [self.window makeKeyAndVisible];

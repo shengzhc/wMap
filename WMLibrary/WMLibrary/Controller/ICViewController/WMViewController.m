@@ -13,7 +13,9 @@
 #import "UILabel+WMServices.h"
 
 @interface WMViewController ()
+
 @property (nonatomic, strong) WMView *view;
+
 @end
 
 @implementation WMViewController
@@ -24,6 +26,10 @@
     if (self)
     {
         self.delegate = delegate;
+        if ([UIViewController instanceMethodForSelector:@selector(setEdgesForExtendedLayout:)])
+        {
+            self.edgesForExtendedLayout = UIRectEdgeNone;
+        }
     }
     
     return self;
