@@ -10,4 +10,6 @@
 
 @interface WMClockViewCell : UITableViewCell
 
+@property (nonatomic, strong) id delegate;
+
 @end

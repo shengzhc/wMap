@@ -10,7 +10,7 @@
 #import "WMShowView.h"
 #import "WMClockView.h"
 
-#define CLOCK_TABLE_HEIGHT 200
+#define CLOCK_TABLE_HEIGHT 220
 
 @interface WMShowViewController ()
 

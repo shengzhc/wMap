@@ -11,7 +11,8 @@
 @interface WMRepository : NSObject
 
 @property (nonatomic, strong) NSMutableDictionary *buildings;
-@property (nonatomic, strong) NSMutableDictionary *shows;
+@property (nonatomic, strong) NSMutableArray *shows;
+@property (nonatomic, strong) NSMutableArray *scheduleShows;
 
 + (WMRepository *)sharedRepository;
 

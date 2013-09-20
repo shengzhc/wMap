@@ -51,12 +51,13 @@ static NSString *showCellIdentifier = @"ShowCellIdentifier";
 ////////////////////////////////////////////////////////////////////////
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 10;
+    return [WMRepository sharedRepository].shows.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     WMShowCell *cell = (WMShowCell *)[tableView dequeueReusableCellWithIdentifier:showCellIdentifier];
+    cell.textLabel.text = [[WMRepository sharedRepository].shows objectAtIndex:indexPath.row];
     return cell;
 }
 

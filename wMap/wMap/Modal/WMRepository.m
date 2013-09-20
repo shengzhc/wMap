@@ -12,12 +12,17 @@ static WMRepository *repository = nil;
 
 @implementation WMRepository
 
-
 + (WMRepository *)sharedRepository
 {
     if (!repository)
     {
         repository = [[WMRepository alloc] init];
+        repository.shows = [NSMutableArray new];
+        for (NSUInteger i=1; i<20; i++)
+        {
+            [repository.shows addObject:[NSString stringWithFormat:@"%i", i]];
+        }
+        repository.scheduleShows = [NSMutableArray new];
     }
     
     return repository;
@@ -39,14 +44,11 @@ static WMRepository *repository = nil;
 
 - (void)load
 {
-    
     [self.buildings removeAllObjects];
     self.buildings = [NSMutableDictionary new];
 
-    
-    
     [self.shows removeAllObjects];
-    self.shows = [NSMutableDictionary new];
+    self.shows = [NSMutableArray new];
 }
 
 @end

@@ -14,8 +14,9 @@
 {
     [super drawRect:rect];
     UIImage *background = [UIImage imageNamed:@"navigation_bar"];
+    UIImage *shadowImage = [UIImage imageNamed:@"shadow_line"];
     [background drawInRect:rect];
-    [self addShadowWithColor:[UIColor blackColor]];
+    [shadowImage drawInRect:CGRectMake(rect.origin.x, rect.origin.y + rect.size.height - 5, rect.size.width, 5)];
 }
 
 @end

@@ -13,4 +13,5 @@
     #import <Foundation/Foundation.h>
 
 #import "WMLibrary.h"
+#import "WMRepository.h"
 #endif

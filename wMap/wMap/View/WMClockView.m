@@ -34,6 +34,7 @@
                forCellReuseIdentifier:WMClockCellIdentifier];
         [self.tableView registerClass:[WMCancelCell class]
                forCellReuseIdentifier:WMCancelCellIdentifier];
+        self.tableView.bounces = NO;
         [self addSubview:self.tableView];
     }
     
@@ -52,7 +53,7 @@
 ////////////////////////////////////////////////////////////////////////
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 5 + 1;
+    return [WMRepository sharedRepository].scheduleShows.count + 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -67,6 +68,8 @@
     else
     {
         WMClockViewCell *cell = (WMClockViewCell *)[tableView dequeueReusableCellWithIdentifier:WMClockCellIdentifier];
+        cell.delegate = self;
+        cell.textLabel.text = [[WMRepository sharedRepository].scheduleShows objectAtIndex:indexPath.row];
         return cell;
     }
 }
@@ -84,10 +87,13 @@
                                 withObject:self];
         }
     }
-    else
-    {
-        
-    }
 }
 
+- (void)removeCell:(UITableViewCell *)cell
+{
+    NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
+    [[WMRepository sharedRepository].scheduleShows removeObjectAtIndex:indexPath.row];
+    [self.tableView deleteRowsAtIndexPaths:[NSArray arrayWithObjects:indexPath, nil]
+                          withRowAnimation:UITableViewRowAnimationLeft];
+}
 @end
