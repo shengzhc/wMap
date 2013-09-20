@@ -26,7 +26,7 @@
     if (self)
     {
         self.delegate = delegate;
-        if ([UIViewController instanceMethodForSelector:@selector(setEdgesForExtendedLayout:)])
+        if ([UIViewController instancesRespondToSelector:@selector(setEdgesForExtendedLayout:)])
         {
             self.edgesForExtendedLayout = UIRectEdgeNone;
         }
