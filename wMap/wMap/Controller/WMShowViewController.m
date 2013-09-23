@@ -58,7 +58,6 @@
     self.navigationItem.leftBarButtonItems = nil;
 }
 
-
 - (WMClockView *)clockView
 {
     if (!_clockView)
@@ -98,6 +97,18 @@
         [_clockView removeFromSuperview];
         _clockView = nil;
     }];
+}
+
+- (void)scheduleShowAtIndexPath:(NSIndexPath *)indexPath
+{
+    WMShowEntity *showEntity = (WMShowEntity *)[[WMRepository sharedRepository].shows
+                                                objectAtIndex:indexPath.row];
+    
+    if (![[WMRepository sharedRepository].scheduleShows containsObject:showEntity])
+    {
+        [[WMRepository sharedRepository].scheduleShows addObject:showEntity];
+        [WMLocalNotificationManager scheduleLocalNotificationWithShowEntity:showEntity];
+    }
 }
 
 @end

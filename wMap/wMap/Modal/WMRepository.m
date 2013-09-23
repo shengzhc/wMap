@@ -46,7 +46,8 @@ static WMRepository *repository = nil;
 {
     [self.buildings removeAllObjects];
     self.buildings = [NSMutableDictionary new];
-
+    
+    
     [self.shows removeAllObjects];
     self.shows = [NSMutableArray new];
 }

@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "WMShowEntity.h"
 
 @interface WMLocalNotificationManager : NSObject
+
++ (void)scheduleLocalNotificationWithShowEntity:(WMShowEntity *)showEntity;
+
 
 @end

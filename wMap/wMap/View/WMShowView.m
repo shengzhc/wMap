@@ -67,11 +67,15 @@ static NSString *showCellIdentifier = @"ShowCellIdentifier";
     return 60.0;
 }
 
-
 - (void)alarmButtonClicked:(id)sender
 {
     NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
     
+    if ([self.delegate respondsToSelector:@selector(scheduleShowAtIndexPath:)])
+    {
+        [self.delegate performSelector:@selector(scheduleShowAtIndexPath:)
+                            withObject:indexPath];
+    }
     id addedObject = [[WMRepository sharedRepository].shows objectAtIndex:indexPath.row];
     if (![[WMRepository sharedRepository].scheduleShows containsObject:addedObject])
     {

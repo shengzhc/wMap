@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>76D128B2-D357-49E1-AD44-82916424CD2D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>wMap</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E32DE3A6-2EAA-4550-BD61-A02ED3BD47E8</key>
+		<string>ssh://github.com/shengzhc/wMap.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>wMap.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E32DE3A6-2EAA-4550-BD61-A02ED3BD47E8</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/shengzhc/wMap.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E32DE3A6-2EAA-4550-BD61-A02ED3BD47E8</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E32DE3A6-2EAA-4550-BD61-A02ED3BD47E8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>wMap</string>
+		</dict>
+	</array>
+</dict>
+</plist>

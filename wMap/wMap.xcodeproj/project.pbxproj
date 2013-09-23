@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E7260EC117ED837B00069E46 /* WMShowEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = E7260EC017ED837B00069E46 /* WMShowEntity.m */; };
+		E7260EC417ED840A00069E46 /* WMLandmarkEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = E7260EC317ED840A00069E46 /* WMLandmarkEntity.m */; };
 		E72EC55017EADCA500683AA9 /* WMCancelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E72EC54F17EADCA500683AA9 /* WMCancelCell.m */; };
 		E72EC55317EAE3B800683AA9 /* cell_selected_background.png in Resources */ = {isa = PBXBuildFile; fileRef = E72EC55117EAE3B800683AA9 /* cell_selected_background.png */; };
 		E72EC55417EAE3B800683AA9 /* cell_selected_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E72EC55217EAE3B800683AA9 /* cell_selected_background@2x.png */; };
@@ -74,6 +76,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E7260EBF17ED837B00069E46 /* WMShowEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMShowEntity.h; sourceTree = "<group>"; };
+		E7260EC017ED837B00069E46 /* WMShowEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMShowEntity.m; sourceTree = "<group>"; };
+		E7260EC217ED840A00069E46 /* WMLandmarkEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMLandmarkEntity.h; sourceTree = "<group>"; };
+		E7260EC317ED840A00069E46 /* WMLandmarkEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMLandmarkEntity.m; sourceTree = "<group>"; };
 		E72EC54E17EADCA500683AA9 /* WMCancelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMCancelCell.h; sourceTree = "<group>"; };
 		E72EC54F17EADCA500683AA9 /* WMCancelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMCancelCell.m; sourceTree = "<group>"; };
 		E72EC55117EAE3B800683AA9 /* cell_selected_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cell_selected_background.png; sourceTree = "<group>"; };
@@ -324,6 +330,10 @@
 			children = (
 				E7EC314917E7AE0500C394E0 /* WMRepository.h */,
 				E7EC314A17E7AE0500C394E0 /* WMRepository.m */,
+				E7260EBF17ED837B00069E46 /* WMShowEntity.h */,
+				E7260EC017ED837B00069E46 /* WMShowEntity.m */,
+				E7260EC217ED840A00069E46 /* WMLandmarkEntity.h */,
+				E7260EC317ED840A00069E46 /* WMLandmarkEntity.m */,
 			);
 			path = Modal;
 			sourceTree = "<group>";
@@ -478,9 +488,11 @@
 				E7C4D57C17DD9BF3001A6375 /* WMNavigationBar.m in Sources */,
 				E7EC314517E5FE0100C394E0 /* WMVerticalCollectionLayout.m in Sources */,
 				E7EC314817E6015D00C394E0 /* WMVerticalCollectionViewCell.m in Sources */,
+				E7260EC417ED840A00069E46 /* WMLandmarkEntity.m in Sources */,
 				E73B8D6D17EBFC23000A07EC /* WMLocalNotificationManager.m in Sources */,
 				E7EC314B17E7AE0500C394E0 /* WMRepository.m in Sources */,
 				E7EC314E17E8209800C394E0 /* WMShowCell.m in Sources */,
+				E7260EC117ED837B00069E46 /* WMShowEntity.m in Sources */,
 				E72EC55017EADCA500683AA9 /* WMCancelCell.m in Sources */,
 				E7EC315D17E973A500C394E0 /* WMClockView.m in Sources */,
 				E7EC316017E9754E00C394E0 /* WMClockViewCell.m in Sources */,

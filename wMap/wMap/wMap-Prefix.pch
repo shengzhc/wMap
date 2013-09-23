@@ -14,4 +14,6 @@
 
 #import "WMLibrary.h"
 #import "WMRepository.h"
+#import "WMLocalNotificationManager.h"
+
 #endif
