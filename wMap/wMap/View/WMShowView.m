@@ -14,6 +14,7 @@ static NSString *showCellIdentifier = @"ShowCellIdentifier";
 @interface WMShowView ()
 
 @property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) UITableViewCell *currentSelectionCell;
 
 @end
 
@@ -37,7 +38,6 @@ static NSString *showCellIdentifier = @"ShowCellIdentifier";
     return self;
 }
 
-
 - (void)layoutSubviews
 {
     [super layoutSubviews];
@@ -57,14 +57,15 @@ static NSString *showCellIdentifier = @"ShowCellIdentifier";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     WMShowCell *cell = (WMShowCell *)[tableView dequeueReusableCellWithIdentifier:showCellIdentifier];
-    cell.textLabel.text = [[WMRepository sharedRepository].shows objectAtIndex:indexPath.row];
+    WMShowEntity *showEntity = [[WMRepository sharedRepository].shows objectAtIndex:indexPath.row];
+    cell.showEntity = showEntity;
     cell.delegate = self;
     return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 60.0;
+    return 120;
 }
 
 - (void)alarmButtonClicked:(id)sender
@@ -83,7 +84,24 @@ static NSString *showCellIdentifier = @"ShowCellIdentifier";
     }
 }
 
-
+- (void)didPanGestureBegin:(id)sender
+{
+    WMShowCell *cell = (WMShowCell *)sender;
+    
+    if (!self.currentSelectionCell)
+    {
+        self.currentSelectionCell = cell;
+        return;
+    }
+    
+    if (self.currentSelectionCell == cell)
+    {
+        return;
+    }
+    
+    [(WMShowCell *)self.currentSelectionCell moveContentViewCenterToPoint:CGPointMake(CGRectGetMidX(self.currentSelectionCell.bounds), CGRectGetMidY(self.currentSelectionCell.bounds))];
+    self.currentSelectionCell = cell;
+}
 
 
 @end

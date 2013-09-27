@@ -35,6 +35,19 @@
 		E781D79917DEE3F10005DD2E /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E781D79817DEE3F10005DD2E /* OpenGLES.framework */; };
 		E781D8CF17DEF3810005DD2E /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E781D8CE17DEF3810005DD2E /* CoreText.framework */; };
 		E781D90C17DEF71E0005DD2E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7C4D57417DD9AD9001A6375 /* MapKit.framework */; };
+		E7B74E1717F2C45700286EE9 /* whu_shows.json in Resources */ = {isa = PBXBuildFile; fileRef = E7B74E1617F2C45700286EE9 /* whu_shows.json */; };
+		E7B74E2517F4E29D00286EE9 /* activity_center.png in Resources */ = {isa = PBXBuildFile; fileRef = E7B74E1917F4E29D00286EE9 /* activity_center.png */; };
+		E7B74E2617F4E29D00286EE9 /* administration_building.png in Resources */ = {isa = PBXBuildFile; fileRef = E7B74E1A17F4E29D00286EE9 /* administration_building.png */; };
+		E7B74E2717F4E29D00286EE9 /* arts_science_building.png in Resources */ = {isa = PBXBuildFile; fileRef = E7B74E1B17F4E29D00286EE9 /* arts_science_building.png */; };
+		E7B74E2817F4E29D00286EE9 /* luojiashanvilla.png in Resources */ = {isa = PBXBuildFile; fileRef = E7B74E1C17F4E29D00286EE9 /* luojiashanvilla.png */; };
+		E7B74E2917F4E29D00286EE9 /* mountainside_domitory.png in Resources */ = {isa = PBXBuildFile; fileRef = E7B74E1D17F4E29D00286EE9 /* mountainside_domitory.png */; };
+		E7B74E2A17F4E29D00286EE9 /* museum.png in Resources */ = {isa = PBXBuildFile; fileRef = E7B74E1E17F4E29D00286EE9 /* museum.png */; };
+		E7B74E2B17F4E29D00286EE9 /* new_library.png in Resources */ = {isa = PBXBuildFile; fileRef = E7B74E1F17F4E29D00286EE9 /* new_library.png */; };
+		E7B74E2C17F4E29D00286EE9 /* old_library.png in Resources */ = {isa = PBXBuildFile; fileRef = E7B74E2017F4E29D00286EE9 /* old_library.png */; };
+		E7B74E2D17F4E29D00286EE9 /* plum_garden_playground.png in Resources */ = {isa = PBXBuildFile; fileRef = E7B74E2117F4E29D00286EE9 /* plum_garden_playground.png */; };
+		E7B74E2E17F4E29D00286EE9 /* sakura_castle.png in Resources */ = {isa = PBXBuildFile; fileRef = E7B74E2217F4E29D00286EE9 /* sakura_castle.png */; };
+		E7B74E2F17F4E29D00286EE9 /* school_gate.png in Resources */ = {isa = PBXBuildFile; fileRef = E7B74E2317F4E29D00286EE9 /* school_gate.png */; };
+		E7B74E3017F4E29D00286EE9 /* songqing_gymnasium.png in Resources */ = {isa = PBXBuildFile; fileRef = E7B74E2417F4E29D00286EE9 /* songqing_gymnasium.png */; };
 		E7C4D52117DD2114001A6375 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7C4D52017DD2114001A6375 /* UIKit.framework */; };
 		E7C4D52317DD2114001A6375 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7C4D52217DD2114001A6375 /* Foundation.framework */; };
 		E7C4D52517DD2114001A6375 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7C4D52417DD2114001A6375 /* CoreGraphics.framework */; };
@@ -107,6 +120,19 @@
 		E781D74B17DEE31E0005DD2E /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		E781D79817DEE3F10005DD2E /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		E781D8CE17DEF3810005DD2E /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		E7B74E1617F2C45700286EE9 /* whu_shows.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = whu_shows.json; sourceTree = "<group>"; };
+		E7B74E1917F4E29D00286EE9 /* activity_center.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = activity_center.png; sourceTree = "<group>"; };
+		E7B74E1A17F4E29D00286EE9 /* administration_building.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = administration_building.png; sourceTree = "<group>"; };
+		E7B74E1B17F4E29D00286EE9 /* arts_science_building.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arts_science_building.png; sourceTree = "<group>"; };
+		E7B74E1C17F4E29D00286EE9 /* luojiashanvilla.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = luojiashanvilla.png; sourceTree = "<group>"; };
+		E7B74E1D17F4E29D00286EE9 /* mountainside_domitory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mountainside_domitory.png; sourceTree = "<group>"; };
+		E7B74E1E17F4E29D00286EE9 /* museum.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = museum.png; sourceTree = "<group>"; };
+		E7B74E1F17F4E29D00286EE9 /* new_library.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = new_library.png; sourceTree = "<group>"; };
+		E7B74E2017F4E29D00286EE9 /* old_library.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = old_library.png; sourceTree = "<group>"; };
+		E7B74E2117F4E29D00286EE9 /* plum_garden_playground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plum_garden_playground.png; sourceTree = "<group>"; };
+		E7B74E2217F4E29D00286EE9 /* sakura_castle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sakura_castle.png; sourceTree = "<group>"; };
+		E7B74E2317F4E29D00286EE9 /* school_gate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = school_gate.png; sourceTree = "<group>"; };
+		E7B74E2417F4E29D00286EE9 /* songqing_gymnasium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = songqing_gymnasium.png; sourceTree = "<group>"; };
 		E7C4D51D17DD2114001A6375 /* wMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7C4D52017DD2114001A6375 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E7C4D52217DD2114001A6375 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -198,6 +224,25 @@
 			path = Tool;
 			sourceTree = "<group>";
 		};
+		E7B74E1817F4E29D00286EE9 /* landscapesimages */ = {
+			isa = PBXGroup;
+			children = (
+				E7B74E1917F4E29D00286EE9 /* activity_center.png */,
+				E7B74E1A17F4E29D00286EE9 /* administration_building.png */,
+				E7B74E1B17F4E29D00286EE9 /* arts_science_building.png */,
+				E7B74E1C17F4E29D00286EE9 /* luojiashanvilla.png */,
+				E7B74E1D17F4E29D00286EE9 /* mountainside_domitory.png */,
+				E7B74E1E17F4E29D00286EE9 /* museum.png */,
+				E7B74E1F17F4E29D00286EE9 /* new_library.png */,
+				E7B74E2017F4E29D00286EE9 /* old_library.png */,
+				E7B74E2117F4E29D00286EE9 /* plum_garden_playground.png */,
+				E7B74E2217F4E29D00286EE9 /* sakura_castle.png */,
+				E7B74E2317F4E29D00286EE9 /* school_gate.png */,
+				E7B74E2417F4E29D00286EE9 /* songqing_gymnasium.png */,
+			);
+			path = landscapesimages;
+			sourceTree = "<group>";
+		};
 		E7C4D51417DD2114001A6375 = {
 			isa = PBXGroup;
 			children = (
@@ -266,6 +311,7 @@
 		E7C4D53D17DD2149001A6375 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E7B74E1817F4E29D00286EE9 /* landscapesimages */,
 				E7C4D53E17DD2149001A6375 /* font */,
 				E7C4D53F17DD2149001A6375 /* image */,
 				E7C4D54017DD2149001A6375 /* json */,
@@ -321,6 +367,7 @@
 		E7C4D54017DD2149001A6375 /* json */ = {
 			isa = PBXGroup;
 			children = (
+				E7B74E1617F2C45700286EE9 /* whu_shows.json */,
 			);
 			path = json;
 			sourceTree = "<group>";
@@ -432,31 +479,44 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7B74E2E17F4E29D00286EE9 /* sakura_castle.png in Resources */,
 				E7C4D52B17DD2114001A6375 /* InfoPlist.strings in Resources */,
 				E73B8D7117EC0610000A07EC /* cell_trash@2x.png in Resources */,
+				E7B74E2B17F4E29D00286EE9 /* new_library.png in Resources */,
 				E7C4D53317DD2114001A6375 /* Default.png in Resources */,
+				E7B74E2517F4E29D00286EE9 /* activity_center.png in Resources */,
 				E72EC55417EAE3B800683AA9 /* cell_selected_background@2x.png in Resources */,
 				E73B8D7017EC0610000A07EC /* cell_trash.png in Resources */,
+				E7B74E2F17F4E29D00286EE9 /* school_gate.png in Resources */,
 				E7C4D53517DD2114001A6375 /* Default@2x.png in Resources */,
 				E7C4D53717DD2114001A6375 /* Default-568h@2x.png in Resources */,
 				E72EC55617EAE4D500683AA9 /* shadow_line.png in Resources */,
 				E7C4D54917DD920A001A6375 /* Roboto-Bold.ttf in Resources */,
 				E7C4D54A17DD920A001A6375 /* Roboto-Light.ttf in Resources */,
+				E7B74E3017F4E29D00286EE9 /* songqing_gymnasium.png in Resources */,
 				E7C4D54B17DD920A001A6375 /* Roboto-Medium.ttf in Resources */,
 				E7C4D54C17DD920A001A6375 /* Roboto-Regular.ttf in Resources */,
 				E7C4D54D17DD920A001A6375 /* Roboto-Thin.ttf in Resources */,
+				E7B74E2817F4E29D00286EE9 /* luojiashanvilla.png in Resources */,
 				E7C4D58017DD9C98001A6375 /* navigation_bar.png in Resources */,
 				E7C4D58517DD9FBF001A6375 /* navigation_bar@2x.png in Resources */,
+				E7B74E2A17F4E29D00286EE9 /* museum.png in Resources */,
 				E72EC55317EAE3B800683AA9 /* cell_selected_background.png in Resources */,
+				E7B74E2917F4E29D00286EE9 /* mountainside_domitory.png in Resources */,
 				E781D72E17DE70C30005DD2E /* tab_university.png in Resources */,
 				E781D72F17DE70C30005DD2E /* tab_university@2x.png in Resources */,
+				E7B74E1717F2C45700286EE9 /* whu_shows.json in Resources */,
 				E781D73217DEC2360005DD2E /* tab_university_press.png in Resources */,
+				E7B74E2617F4E29D00286EE9 /* administration_building.png in Resources */,
 				E781D73317DEC2360005DD2E /* tab_university_press@2x.png in Resources */,
 				E781D73617DEC3760005DD2E /* tab_show_press.png in Resources */,
 				E781D73717DEC3760005DD2E /* tab_show_press@2x.png in Resources */,
 				E781D73A17DEC4400005DD2E /* tab_show.png in Resources */,
 				E781D73B17DEC4400005DD2E /* tab_show@2x.png in Resources */,
+				E7B74E2D17F4E29D00286EE9 /* plum_garden_playground.png in Resources */,
 				E781D73D17DEC52A0005DD2E /* tab_map.png in Resources */,
+				E7B74E2717F4E29D00286EE9 /* arts_science_building.png in Resources */,
+				E7B74E2C17F4E29D00286EE9 /* old_library.png in Resources */,
 				E781D73F17DEC5770005DD2E /* tab_map@2x.png in Resources */,
 				E781D74117DEC5850005DD2E /* tab_map_press.png in Resources */,
 				E781D74317DEC5A00005DD2E /* tab_map_press@2x.png in Resources */,

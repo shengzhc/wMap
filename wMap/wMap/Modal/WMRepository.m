@@ -18,11 +18,8 @@ static WMRepository *repository = nil;
     {
         repository = [[WMRepository alloc] init];
         repository.shows = [NSMutableArray new];
-        for (NSUInteger i=1; i<20; i++)
-        {
-            [repository.shows addObject:[NSString stringWithFormat:@"%i", i]];
-        }
         repository.scheduleShows = [NSMutableArray new];
+        [repository load];
     }
     
     return repository;
@@ -50,6 +47,15 @@ static WMRepository *repository = nil;
     
     [self.shows removeAllObjects];
     self.shows = [NSMutableArray new];
+    NSData *showData = [NSData dataWithContentsOfURL:[[NSBundle mainBundle] URLForResource:@"whu_shows" withExtension:@"json"]];
+    NSArray *showArray = [NSJSONSerialization JSONObjectWithData:showData
+                                                         options:NSJSONReadingAllowFragments
+                                                           error:nil];
+
+    for (NSDictionary *dict in showArray)
+    {
+        [self.shows addObject:[WMShowEntity entityWithDictionary:dict]];
+    }
 }
 
 @end

@@ -116,7 +116,6 @@
     }
 }
 
-
 - (void)removeCell
 {
     if ([self.delegate respondsToSelector:@selector(removeCell:)])

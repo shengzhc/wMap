@@ -45,12 +45,10 @@
     return [WMShowView class];
 }
 
-
 - (NSString *)titleString
 {
     return @"节目";
 }
-
 
 - (void)viewDidLoad
 {

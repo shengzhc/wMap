@@ -61,14 +61,14 @@
     {
         WMCancelCell *cell = (WMCancelCell *)[tableView dequeueReusableCellWithIdentifier:WMCancelCellIdentifier];
         cell.textLabel.text = @"Cancel";
-        
         return cell;
     }
     else
     {
         WMClockViewCell *cell = (WMClockViewCell *)[tableView dequeueReusableCellWithIdentifier:WMClockCellIdentifier];
         cell.delegate = self;
-        cell.textLabel.text = [[WMRepository sharedRepository].scheduleShows objectAtIndex:indexPath.row];
+        WMShowEntity *showEntity = (WMShowEntity *)[[WMRepository sharedRepository].scheduleShows objectAtIndex:indexPath.row];
+        cell.textLabel.text = showEntity.name;
         return cell;
     }
 }
@@ -93,7 +93,7 @@
     NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
     [[WMRepository sharedRepository].scheduleShows removeObjectAtIndex:indexPath.row];
     [self.tableView deleteRowsAtIndexPaths:[NSArray arrayWithObjects:indexPath, nil]
-                          withRowAnimation:UITableViewRowAnimationLeft];
+                          withRowAnimation:UITableViewRowAnimationTop];
     
     WMClockView *this = self;
     

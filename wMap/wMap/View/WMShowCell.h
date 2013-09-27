@@ -11,5 +11,8 @@
 @interface WMShowCell : UITableViewCell < UIGestureRecognizerDelegate >
 
 @property (nonatomic, strong) id delegate;
+@property (nonatomic, strong) WMShowEntity *showEntity;
+
+- (void)moveContentViewCenterToPoint:(CGPoint)point;
 
 @end
