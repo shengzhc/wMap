@@ -10,7 +10,7 @@
 
 @interface WMView : UIView
 
-@property (nonatomic, weak) id delegate;
+@property (nonatomic, strong) id delegate;
 
 - (id)initWithFrame:(CGRect)frame
            delegate:(id)delegate;

@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "WMLandmarkEntity.h"
 
 @interface WMRepository : NSObject
 
-@property (nonatomic, strong) NSMutableDictionary *buildings;
+@property (nonatomic, strong) NSMutableArray *buildings;
 @property (nonatomic, strong) NSMutableArray *shows;
 @property (nonatomic, strong) NSMutableArray *scheduleShows;
 

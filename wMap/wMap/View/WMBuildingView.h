@@ -8,6 +8,15 @@
 
 #import "WMView.h"
 
+@protocol WMBuildingViewDelegate <NSObject>
+
+@optional
+- (void)didSelectCollectionViewAtIndexPath:(NSIndexPath *)indexPath;
+
+@end
+
 @interface WMBuildingView : WMView < UICollectionViewDataSource, UICollectionViewDelegate >
+
+@property (nonatomic, strong) id < WMBuildingViewDelegate > delegate;
 
 @end

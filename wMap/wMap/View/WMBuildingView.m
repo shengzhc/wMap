@@ -8,9 +8,9 @@
 
 #import "WMBuildingView.h"
 #import "WMVerticalCollectionLayout.h"
-#import "WMVerticalCollectionViewCell.h"
+#import "WMBuildingCollectionViewCell.h"
 
-static NSString *collectionViewCellIdentifier = @"VerticalCollectionViewCellIdentifier";
+static NSString *collectionViewCellIdentifier = @"WMBuildingCollectionViewCellIdentifier";
 
 @interface WMBuildingView ()
 
@@ -34,9 +34,10 @@ static NSString *collectionViewCellIdentifier = @"VerticalCollectionViewCellIden
                                                  collectionViewLayout:self.verticalLayout];
         self.collectionView.dataSource = self;
         self.collectionView.delegate = self;
-        [self.collectionView registerClass:[WMVerticalCollectionViewCell class]
+        [self.collectionView registerClass:[WMBuildingCollectionViewCell class]
                 forCellWithReuseIdentifier:collectionViewCellIdentifier];
         self.collectionView.backgroundColor = [UIColor whiteColor];
+        [self.collectionView registerClass:[WMBuildingCollectionViewCell class] forCellWithReuseIdentifier:collectionViewCellIdentifier];
         
         [self addSubview:self.collectionView];
     }
@@ -59,13 +60,18 @@ static NSString *collectionViewCellIdentifier = @"VerticalCollectionViewCellIden
 ////////////////////////////////////////////////////////////////////////
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 10;
+    return [WMRepository sharedRepository].buildings.count;
 }
 
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:collectionViewCellIdentifier forIndexPath:indexPath];
+    WMBuildingCollectionViewCell *cell = (WMBuildingCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:collectionViewCellIdentifier
+                                                                           forIndexPath:indexPath];
+    WMLandmarkEntity *landmarkEntity = [[WMRepository sharedRepository].buildings objectAtIndex:indexPath.row];
+    
+    [cell setData:landmarkEntity delegate:self];
+    
     return cell;
 }
 
@@ -75,7 +81,7 @@ static NSString *collectionViewCellIdentifier = @"VerticalCollectionViewCellIden
     
     if (attribute.alpha > 0.5)
     {
-        NSLog(@"%@", NSStringFromSelector(_cmd));
+        [self.delegate didSelectCollectionViewAtIndexPath:indexPath];
     }
 }
 

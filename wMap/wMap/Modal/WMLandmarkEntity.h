@@ -11,10 +11,13 @@
 @interface WMLandmarkEntity : NSObject
 
 @property (nonatomic, strong) NSString *name;
-@property (nonatomic, strong) NSString *description;
-@property (nonatomic, strong) NSString *address;
+@property (nonatomic, strong) NSString *nickname;
+@property (nonatomic, strong) NSString *desc;
 @property (nonatomic, strong) NSNumber *latitude;
 @property (nonatomic, strong) NSNumber *longitude;
 @property (nonatomic, strong) NSString *image;
+
++ (WMLandmarkEntity *)entityWithDictionary:(NSDictionary *)dictionary;
+- (NSString *)uniqueIdentifier;
 
 @end

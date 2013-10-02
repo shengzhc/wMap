@@ -70,7 +70,7 @@
                                              forState:UIControlStateNormal];
     [[UITabBarItem appearance] setTitleTextAttributes:@{ UITextAttributeTextColor : [UIColor blueColor],
                                  UITextAttributeFont : [UIFont icBoldFontWithSize:12] }
-                                             forState:UIControlStateHighlighted];
+                                             forState:UIControlStateSelected];
 
     _tabBarViewController = [[WMTabBarViewController alloc] init];
     [_tabBarViewController.tabBar setSelectionIndicatorImage:[UIImage imageWithColor:[UIColor clearColor]

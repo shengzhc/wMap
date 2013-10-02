@@ -7,7 +7,7 @@
 //
 
 #import "WMBuildingViewController.h"
-#import "WMBuildingView.h"
+#import "WMBuildingDetailViewController.h"
 
 @interface WMBuildingViewController ()
 
@@ -33,16 +33,20 @@
     return [WMBuildingView class];
 }
 
-
 - (NSString *)titleString
 {
     return @"地标";
 }
 
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     self.navigationItem.leftBarButtonItems = nil;
+}
+
+- (void)didSelectCollectionViewAtIndexPath:(NSIndexPath *)indexPath
+{
+    WMBuildingDetailViewController *detailViewController = [[WMBuildingDetailViewController alloc] initWithLandmark:[[WMRepository sharedRepository].buildings objectAtIndex:indexPath.row] delegate:self];
+    [self.navigationController pushViewController:detailViewController animated:YES];
 }
 @end

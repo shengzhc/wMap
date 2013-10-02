@@ -7,7 +7,8 @@
 //
 
 #import "WMViewController.h"
+#import "WMBuildingView.h"
 
-@interface WMBuildingViewController : WMViewController
+@interface WMBuildingViewController : WMViewController < WMBuildingViewDelegate >
 
 @end

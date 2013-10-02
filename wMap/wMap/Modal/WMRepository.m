@@ -42,8 +42,15 @@ static WMRepository *repository = nil;
 - (void)load
 {
     [self.buildings removeAllObjects];
-    self.buildings = [NSMutableDictionary new];
-    
+    self.buildings = [NSMutableArray new];
+    NSData *buildingsData = [NSData dataWithContentsOfURL:[[NSBundle mainBundle] URLForResource:@"whu_landscapes" withExtension:@"json"]];
+    NSArray *buildings = [NSJSONSerialization JSONObjectWithData:buildingsData
+                                                         options:NSJSONReadingAllowFragments
+                                                           error:nil];
+    for (NSDictionary *dict in buildings)
+    {
+        [self.buildings addObject:[WMLandmarkEntity entityWithDictionary:dict]];
+    }
     
     [self.shows removeAllObjects];
     self.shows = [NSMutableArray new];
@@ -51,7 +58,7 @@ static WMRepository *repository = nil;
     NSArray *showArray = [NSJSONSerialization JSONObjectWithData:showData
                                                          options:NSJSONReadingAllowFragments
                                                            error:nil];
-
+    
     for (NSDictionary *dict in showArray)
     {
         [self.shows addObject:[WMShowEntity entityWithDictionary:dict]];
