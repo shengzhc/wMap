@@ -11,7 +11,7 @@
 
 @interface WMMapViewController ()
 
-//@property (nonatomic, strong) MAMapView *mapView;
+@property (nonatomic, strong) MAMapView *mapView;
 
 @end
 
@@ -39,6 +39,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [MAMapServices sharedServices].apiKey = @"67c5eab4838b21d1f6a4c1cc35b95d00";
     self.navigationItem.leftBarButtonItems = nil;
 }
 
@@ -47,20 +48,15 @@
 {
     [super viewWillAppear:animated];
     
-//    self.mapView = [[MAMapView alloc] initWithFrame:self.view.bounds];
-//    self.mapView.delegate = self;
-//    [self.view addSubview:self.mapView];
+    self.mapView = [[MAMapView alloc] initWithFrame:self.view.bounds];
+    self.mapView.delegate = self;
+    [self.view addSubview:self.mapView];
 }
 
 
 - (NSString *)titleString
 {
     return @"地图";
-}
-
-- (NSString *)keyForMap
-{
-    return @"67c5eab4838b21d1f6a4c1cc35b95d00";
 }
 
 @end

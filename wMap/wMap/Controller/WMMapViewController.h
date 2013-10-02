@@ -7,8 +7,8 @@
 //
 
 #import "WMViewController.h"
-//#import "MAMapKit.h"
+#import <MAMapKit/MAMapKit.h>
 
-@interface WMMapViewController : WMViewController
+@interface WMMapViewController : WMViewController < MAMapViewDelegate >
 
 @end

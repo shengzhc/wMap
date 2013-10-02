@@ -20,6 +20,10 @@
 		E75D1A2517FBCCD3009C9828 /* WMBuildingDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E75D1A2417FBCCD3009C9828 /* WMBuildingDetailViewController.m */; };
 		E75D1A2817FBCCE0009C9828 /* WMBuildingDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = E75D1A2717FBCCE0009C9828 /* WMBuildingDetailView.m */; };
 		E75D1A2B17FBE7A6009C9828 /* WMBuildingCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E75D1A2A17FBE7A6009C9828 /* WMBuildingCollectionViewCell.m */; };
+		E75D1A5717FBF865009C9828 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E75D1A5617FBF865009C9828 /* MAMapKit.framework */; };
+		E75D1A5917FBF8B0009C9828 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E75D1A5817FBF8B0009C9828 /* libstdc++.6.0.9.dylib */; };
+		E75D1A5B17FBF8BA009C9828 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E75D1A5A17FBF8BA009C9828 /* Security.framework */; };
+		E75D1A5D17FBF947009C9828 /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E75D1A5C17FBF947009C9828 /* AMap.bundle */; };
 		E781D72E17DE70C30005DD2E /* tab_university.png in Resources */ = {isa = PBXBuildFile; fileRef = E781D72C17DE70C30005DD2E /* tab_university.png */; };
 		E781D72F17DE70C30005DD2E /* tab_university@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E781D72D17DE70C30005DD2E /* tab_university@2x.png */; };
 		E781D73217DEC2360005DD2E /* tab_university_press.png in Resources */ = {isa = PBXBuildFile; fileRef = E781D73017DEC2360005DD2E /* tab_university_press.png */; };
@@ -112,6 +116,10 @@
 		E75D1A2717FBCCE0009C9828 /* WMBuildingDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMBuildingDetailView.m; sourceTree = "<group>"; };
 		E75D1A2917FBE7A6009C9828 /* WMBuildingCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMBuildingCollectionViewCell.h; sourceTree = "<group>"; };
 		E75D1A2A17FBE7A6009C9828 /* WMBuildingCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMBuildingCollectionViewCell.m; sourceTree = "<group>"; };
+		E75D1A5617FBF865009C9828 /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MAMapKit.framework; path = ../../../Downloads/AMap_iOS_API_Lib_V2.1/2D/MAMapKit.framework; sourceTree = "<group>"; };
+		E75D1A5817FBF8B0009C9828 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
+		E75D1A5A17FBF8BA009C9828 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		E75D1A5C17FBF947009C9828 /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AMap.bundle; sourceTree = "<group>"; };
 		E781D72C17DE70C30005DD2E /* tab_university.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_university.png; sourceTree = "<group>"; };
 		E781D72D17DE70C30005DD2E /* tab_university@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_university@2x.png"; sourceTree = "<group>"; };
 		E781D73017DEC2360005DD2E /* tab_university_press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_university_press.png; sourceTree = "<group>"; };
@@ -205,11 +213,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E75D1A5B17FBF8BA009C9828 /* Security.framework in Frameworks */,
+				E75D1A5917FBF8B0009C9828 /* libstdc++.6.0.9.dylib in Frameworks */,
+				E781D74A17DEE30F0005DD2E /* CoreTelephony.framework in Frameworks */,
+				E75D1A5717FBF865009C9828 /* MAMapKit.framework in Frameworks */,
 				E781D90C17DEF71E0005DD2E /* MapKit.framework in Frameworks */,
 				E781D8CF17DEF3810005DD2E /* CoreText.framework in Frameworks */,
 				E781D79917DEE3F10005DD2E /* OpenGLES.framework in Frameworks */,
 				E781D74C17DEE31E0005DD2E /* libz.dylib in Frameworks */,
-				E781D74A17DEE30F0005DD2E /* CoreTelephony.framework in Frameworks */,
 				E781D74817DEE3030005DD2E /* SystemConfiguration.framework in Frameworks */,
 				E781D74617DEE2F50005DD2E /* QuartzCore.framework in Frameworks */,
 				E7C4D57917DD9B2D001A6375 /* CoreLocation.framework in Frameworks */,
@@ -271,6 +282,9 @@
 		E7C4D51F17DD2114001A6375 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E75D1A5A17FBF8BA009C9828 /* Security.framework */,
+				E75D1A5817FBF8B0009C9828 /* libstdc++.6.0.9.dylib */,
+				E75D1A5617FBF865009C9828 /* MAMapKit.framework */,
 				E781D8CE17DEF3810005DD2E /* CoreText.framework */,
 				E781D79817DEE3F10005DD2E /* OpenGLES.framework */,
 				E781D74B17DEE31E0005DD2E /* libz.dylib */,
@@ -319,6 +333,7 @@
 		E7C4D53D17DD2149001A6375 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E75D1A5C17FBF947009C9828 /* AMap.bundle */,
 				E7B74E1817F4E29D00286EE9 /* landscapesimages */,
 				E7C4D53E17DD2149001A6375 /* font */,
 				E7C4D53F17DD2149001A6375 /* image */,
@@ -503,6 +518,7 @@
 				E7B74E2F17F4E29D00286EE9 /* school_gate.png in Resources */,
 				E7C4D53517DD2114001A6375 /* Default@2x.png in Resources */,
 				E7C4D53717DD2114001A6375 /* Default-568h@2x.png in Resources */,
+				E75D1A5D17FBF947009C9828 /* AMap.bundle in Resources */,
 				E72EC55617EAE4D500683AA9 /* shadow_line.png in Resources */,
 				E7C4D54917DD920A001A6375 /* Roboto-Bold.ttf in Resources */,
 				E7C4D54A17DD920A001A6375 /* Roboto-Light.ttf in Resources */,
@@ -649,16 +665,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LIBRARY = "compiler-default";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/shengzhc/Downloads/AMap_iOS_API_Lib_V2.1/2D,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "wMap/wMap-Prefix.pch";
 				HEADER_SEARCH_PATHS = "../WMLibrary/WMLibrary/**";
 				INFOPLIST_FILE = "wMap/wMap-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/wMap/Extern/MASearchKit/lib\"",
-					"\"$(SRCROOT)/wMap/Extern/MAMapKit/lib\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -676,16 +692,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LIBRARY = "compiler-default";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/shengzhc/Downloads/AMap_iOS_API_Lib_V2.1/2D,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "wMap/wMap-Prefix.pch";
 				HEADER_SEARCH_PATHS = "../WMLibrary/WMLibrary/**";
 				INFOPLIST_FILE = "wMap/wMap-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/wMap/Extern/MASearchKit/lib\"",
-					"\"$(SRCROOT)/wMap/Extern/MAMapKit/lib\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-ObjC",
