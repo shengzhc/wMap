@@ -9,6 +9,8 @@
 #import "WMViewController.h"
 #import <MAMapKit/MAMapKit.h>
 
-@interface WMMapViewController : WMViewController < MAMapViewDelegate >
+@interface WMMapViewController : WMViewController < MAMapViewDelegate, UIActionSheetDelegate >
+
+- (void)locateWithShowEntity:(WMShowEntity *)showEntity;
 
 @end

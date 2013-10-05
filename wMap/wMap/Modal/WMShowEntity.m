@@ -30,4 +30,19 @@
     return [NSString stringWithFormat:@"%@_%@", self.name, self.address];
 }
 
+- (CLLocationCoordinate2D)coordinate
+{
+    return CLLocationCoordinate2DMake([self.latitude floatValue], [self.longitude floatValue]);
+}
+
+- (NSString *)title
+{
+    return self.name;
+}
+
+- (NSString *)subtitle
+{
+    return self.name;
+}
+
 @end

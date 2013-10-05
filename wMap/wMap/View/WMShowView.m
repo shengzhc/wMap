@@ -84,6 +84,16 @@ static NSString *showCellIdentifier = @"ShowCellIdentifier";
     }
 }
 
+- (void)locationButtonClicked:(id)sender
+{
+    NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
+    if ([self.delegate respondsToSelector:@selector(redirectToMMapLocationAtIndexPath:)])
+    {
+        [self.delegate performSelector:@selector(redirectToMMapLocationAtIndexPath:)
+                            withObject:indexPath];
+    }
+}
+
 - (void)didPanGestureBegin:(id)sender
 {
     WMShowCell *cell = (WMShowCell *)sender;

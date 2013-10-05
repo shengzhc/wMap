@@ -9,6 +9,7 @@
 #import "WMShowViewController.h"
 #import "WMShowView.h"
 #import "WMClockView.h"
+#import "WMMapViewController.h"
 
 #define CLOCK_TABLE_HEIGHT 220
 
@@ -109,4 +110,13 @@
     }
 }
 
+- (void)redirectToMMapLocationAtIndexPath:(NSIndexPath *)indexPath
+{
+    WMShowEntity *showEntity = (WMShowEntity *)[[WMRepository sharedRepository].shows
+                                                objectAtIndex:indexPath.row];
+    
+    WMMapViewController *mapViewController = (WMMapViewController *)[((UINavigationController *)self.tabBarController.viewControllers[1]).viewControllers objectAtIndex:0];
+    [self.tabBarController setSelectedIndex:1];
+    [mapViewController locateWithShowEntity:showEntity];
+}
 @end

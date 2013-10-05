@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <MAMapKit/MAMapKit.h>
 
-@interface WMShowEntity : NSObject
+@interface WMShowEntity : NSObject < MAAnnotation >
 
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *description;
