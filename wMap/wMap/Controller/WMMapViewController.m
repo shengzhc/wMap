@@ -65,11 +65,11 @@
 
 - (NSString *)titleString
 {
-    return @"地图";
+    return @"Map";
 }
 /////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////
-#pragma mark Convenient
+#pragma mark ActionSheetDelegate
 /////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
@@ -87,11 +87,41 @@
     }
 }
 
+- (void)willPresentActionSheet:(UIActionSheet *)actionSheet
+{
+    [self iterateActionSheetView:actionSheet];
+}
+
+/////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+#pragma mark Convenient
+/////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+- (void)iterateActionSheetView:(UIView *)view
+{
+    if (!view) {
+        return;
+    }
+    
+    if (view.subviews && view.subviews.count > 0)
+    {
+        for (UIView *s in view.subviews)
+        {
+            if ([s isKindOfClass:[UILabel class]])
+            {
+                [((UILabel *)s) setFont:[UIFont fontWithSize:16]];
+            }
+            [self iterateActionSheetView:s];
+        }
+    }
+}
+
 - (void)locateWithShowEntity:(WMShowEntity *)showEntity
 {
     MAMapRect rect = MAMapRectForCoordinateRegion(MACoordinateRegionMake(CLLocationCoordinate2DMake([showEntity.latitude floatValue], [showEntity.longitude floatValue]), MACoordinateSpanMake(0.003, 0.004)));
     
     [self.mapView setVisibleMapRect:rect];
+    [self.mapView removeAnnotation:showEntity];
     [self.mapView addAnnotation:showEntity];
 }
 /////////////////////////////////////////////////////////////////////////////
@@ -115,7 +145,7 @@
 /////////////////////////////////////////////////////////////////////////////
 - (void)widgetButtonClicked:(UIButton *)button
 {
-    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"当前位置", @"显示交通", nil];
+    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Current Location", @"Show Current Traffic", nil];
     [actionSheet showFromTabBar:self.tabBarController.tabBar];
 }
 
@@ -125,5 +155,7 @@
     [self.mapView setVisibleMapRect:rect];
     
 }
+
+
 
 @end

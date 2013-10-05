@@ -66,10 +66,10 @@
 {
     [[UITabBarItem appearance] setTitleTextAttributes:@{
                             UITextAttributeTextColor : [UIColor blackColor],
-                                 UITextAttributeFont : [UIFont icBoldFontWithSize:12] }
+                                 UITextAttributeFont : [UIFont fontWithSize:14] }
                                              forState:UIControlStateNormal];
     [[UITabBarItem appearance] setTitleTextAttributes:@{ UITextAttributeTextColor : [UIColor blueColor],
-                                 UITextAttributeFont : [UIFont icBoldFontWithSize:12] }
+                                 UITextAttributeFont : [UIFont fontWithSize:14] }
                                              forState:UIControlStateSelected];
 
     _tabBarViewController = [[WMTabBarViewController alloc] init];
@@ -81,7 +81,7 @@
     WMBuildingViewController *buildingViewController = [[WMBuildingViewController alloc] initWithDelegate:self];
     UINavigationController *buildingNav = [[UINavigationController alloc] initWithNavigationBarClass:[WMNavigationBar class] toolbarClass:nil];
     [buildingNav addChildViewController:buildingViewController];
-    UITabBarItem *buildingTabItem = [[UITabBarItem alloc] initWithTitle:@"地标" image:nil tag:0];
+    UITabBarItem *buildingTabItem = [[UITabBarItem alloc] initWithTitle:@"Landmark" image:nil tag:0];
     [buildingTabItem setFinishedSelectedImage:[UIImage imageNamed:@"tab_university_press"]
                   withFinishedUnselectedImage:[UIImage imageNamed:@"tab_university"]];
     buildingNav.tabBarItem = buildingTabItem;
@@ -89,7 +89,7 @@
     WMMapViewController *mapViewController = [[WMMapViewController alloc] initWithDelegate:self];
     UINavigationController *mapNav = [[UINavigationController alloc] initWithNavigationBarClass:[WMNavigationBar class] toolbarClass:nil];
     [mapNav addChildViewController:mapViewController];
-    UITabBarItem *mapTabBarItem = [[UITabBarItem alloc] initWithTitle:@"地图" image:nil tag:0];
+    UITabBarItem *mapTabBarItem = [[UITabBarItem alloc] initWithTitle:@"Map" image:nil tag:0];
     [mapTabBarItem setFinishedSelectedImage:[UIImage imageNamed:@"tab_map_press"]
                 withFinishedUnselectedImage:[UIImage imageNamed:@"tab_map"]];
     mapNav.tabBarItem = mapTabBarItem;
@@ -97,7 +97,7 @@
     WMShowViewController *showViewController = [[WMShowViewController alloc] initWithDelegate:self];
     UINavigationController *showNav = [[UINavigationController alloc] initWithNavigationBarClass:[WMNavigationBar class] toolbarClass:nil];
     [showNav addChildViewController:showViewController];
-    UITabBarItem *showTabBarItem = [[UITabBarItem alloc] initWithTitle:@"节目" image:nil tag:0];
+    UITabBarItem *showTabBarItem = [[UITabBarItem alloc] initWithTitle:@"Activity" image:nil tag:0];
     [showTabBarItem setFinishedSelectedImage:[UIImage imageNamed:@"tab_show_press"]
                  withFinishedUnselectedImage:[UIImage imageNamed:@"tab_show"]];
     showNav.tabBarItem = showTabBarItem;

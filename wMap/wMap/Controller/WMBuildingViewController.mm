@@ -35,7 +35,7 @@
 
 - (NSString *)titleString
 {
-    return @"地标";
+    return @"Landmark";
 }
 
 - (void)viewDidLoad

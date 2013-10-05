@@ -10,10 +10,8 @@
 
 @interface UIFont (WMServices)
 
-+ (UIFont *)fontWithSize:(CGFloat)fontSize;
-
-+ (UIFont *)boldFontWithSize:(CGFloat)fontSize;
-
-+ (UIFont *)italicFontWithSize:(CGFloat)fontSize;
++ (UIFont *)lightFontWithSize:(CGFloat)size;
++ (UIFont *)fontWithSize:(CGFloat)size;
++ (UIFont *)boldFontWithSize:(CGFloat)size;
 
 @end

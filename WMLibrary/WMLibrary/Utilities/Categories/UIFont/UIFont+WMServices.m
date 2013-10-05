@@ -10,22 +10,19 @@
 
 @implementation UIFont (WMServices)
 
-+ (UIFont *)fontWithSize:(CGFloat)fontSize
++ (UIFont *)lightFontWithSize:(CGFloat)size
 {
-    return [UIFont fontWithName:@"ArialMT"
-                           size:fontSize];
+    return [UIFont fontWithName:@"AvenirNextCondensed-UltraLight" size:size];
 }
 
-+ (UIFont *)boldFontWithSize:(CGFloat)fontSize
++ (UIFont *)fontWithSize:(CGFloat)size
 {
-    return [UIFont fontWithName:@"Arial-BoldMT"
-                           size:fontSize];
+    return [UIFont fontWithName:@"AvenirNextCondensed-Regular" size:size];
 }
 
-+ (UIFont *)italicFontWithSize:(CGFloat)fontSize
++ (UIFont *)boldFontWithSize:(CGFloat)size
 {
-    return [UIFont fontWithName:@"Arial-ItalicMT"
-                           size:fontSize];
+    return [UIFont fontWithName:@"AvenirNextCondensed-Bold" size:size];
 }
 
 @end

@@ -9,6 +9,7 @@
 #import "WMViewController.h"
 #import "WMView.h"
 #import "UIFont+WMFont.h"
+#import "UIFont+WMServices.h"
 #import "UIImageView+WMServices.h"
 #import "UILabel+WMServices.h"
 
@@ -63,7 +64,7 @@
     UILabel *label = [UILabel labelWithFrame:CGRectZero
                                         text:[self titleString]
                                    alignment:NSTextAlignmentCenter
-                                        font:[UIFont icBoldFontWithSize:16]
+                                        font:[UIFont boldFontWithSize:20]
                                    textColor:[UIColor  blackColor]];
     [label sizeToFit];
     return label;
@@ -78,7 +79,7 @@
 - (UIBarButtonItem *)leftBarButtonItem
 {
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    button.titleLabel.font = [UIFont icRegularFontWithSize:16];
+    button.titleLabel.font = [UIFont fontWithSize:16];
     [button setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [button setTitle:[self leftBarButtonTitle] forState:UIControlStateNormal];
     [button addTarget:self action:@selector(leftBarButtonClicked:) forControlEvents:UIControlEventTouchUpInside];

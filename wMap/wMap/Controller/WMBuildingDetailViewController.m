@@ -45,7 +45,7 @@
 
 - (NSString *)leftBarButtonTitle
 {
-    return @"地标";
+    return @"Landmark";
 }
 
 @end

@@ -48,7 +48,7 @@
 
 - (NSString *)titleString
 {
-    return @"节目";
+    return @"Activity";
 }
 
 - (void)viewDidLoad
@@ -107,6 +107,9 @@
     {
         [[WMRepository sharedRepository].scheduleShows addObject:showEntity];
         [WMLocalNotificationManager scheduleLocalNotificationWithShowEntity:showEntity];
+        
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Schedule" message:@"You have scheduled successfully" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+        [alertView show];
     }
 }
 

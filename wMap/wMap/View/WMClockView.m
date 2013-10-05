@@ -93,14 +93,20 @@
     NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
     [[WMRepository sharedRepository].scheduleShows removeObjectAtIndex:indexPath.row];
     [self.tableView deleteRowsAtIndexPaths:[NSArray arrayWithObjects:indexPath, nil]
-                          withRowAnimation:UITableViewRowAnimationTop];
+                          withRowAnimation:UITableViewRowAnimationFade];
     
+
     WMClockView *this = self;
     
     [UIView animateWithDuration:.2
                      animations:^
     {
         this.tableView.frame = [this adjustTableViewFrame];
+    }
+                     completion:^(BOOL finished)
+    {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Warning" message:@"Unschedule Your Local Notification Successfully" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+        [alertView show];
     }];
 }
 
