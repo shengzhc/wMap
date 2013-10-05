@@ -104,7 +104,7 @@
 
     [_tabBarViewController setViewControllers:[NSArray arrayWithObjects:buildingNav, mapNav, showNav, nil]];
     self.window.rootViewController = _tabBarViewController;
-
+    [_tabBarViewController setSelectedIndex:1];
 }
 
 @end

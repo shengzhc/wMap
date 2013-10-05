@@ -13,6 +13,7 @@
 
 @property (nonatomic, strong) MAMapView *mapView;
 @property (nonatomic, strong) UIButton *widgetButton;
+@property (nonatomic, strong) id < MAAnnotation > selectedAnnotation;
 
 @end
 
@@ -94,6 +95,24 @@
 
 /////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////
+#pragma mark ActionSheetDelegate
+/////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    switch (buttonIndex)
+    {
+        case 1:
+            [self openExternalMapApplication];
+            break;
+            
+        default:
+            break;
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
 #pragma mark Convenient
 /////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////
@@ -118,11 +137,25 @@
 
 - (void)locateWithShowEntity:(WMShowEntity *)showEntity
 {
-    MAMapRect rect = MAMapRectForCoordinateRegion(MACoordinateRegionMake(CLLocationCoordinate2DMake([showEntity.latitude floatValue], [showEntity.longitude floatValue]), MACoordinateSpanMake(0.003, 0.004)));
+    MAMapRect rect = MAMapRectForCoordinateRegion(MACoordinateRegionMake(CLLocationCoordinate2DMake([showEntity.latitude floatValue], [showEntity.longitude floatValue]), MACoordinateSpanMake(0.0003, 0.0004)));
     
     [self.mapView setVisibleMapRect:rect];
     [self.mapView removeAnnotation:showEntity];
     [self.mapView addAnnotation:showEntity];
+}
+
+- (void)openExternalMapApplication
+{
+    NSURL *url = [NSURL URLWithString:@"scheme:iosamap"];
+    
+    if ([[UIApplication sharedApplication] canOpenURL:url])
+    {
+        
+    }
+    else
+    {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://itunes.apple.com/cn/app//id461703208?mt=8"]];
+    }
 }
 /////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////
@@ -131,12 +164,54 @@
 /////////////////////////////////////////////////////////////////////////////
 - (void)mapView:(MAMapView *)mapView didUpdateUserLocation:(MAUserLocation *)userLocation
 {
-    
+    [self locatemeButtonClicked:nil];
 }
 
 - (void)mapView:(MAMapView *)mapView didFailToLocateUserWithError:(NSError *)error
 {
     
+}
+
+- (MAAnnotationView *)mapView:(MAMapView *)mapView viewForAnnotation:(id<MAAnnotation>)annotation
+{
+    static NSString *annotationViewIdentifier = @"annotationViewIdentifier";
+    
+    if ([annotation isKindOfClass:[WMShowEntity class]])
+    {
+        MAAnnotationView *annotationView = (MAAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:annotationViewIdentifier];
+        if (!annotationView)
+        {
+            annotationView = [[MAAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:annotationViewIdentifier];
+            annotationView.canShowCallout = YES;
+            annotationView.image = [UIImage imageNamed:@"pin"];
+            
+            UIButton *navigationButton = [UIButton buttonWithType:UIButtonTypeCustom];
+            [navigationButton setBackgroundImage:[UIImage imageNamed:@"map_traffic"] forState:UIControlStateNormal];
+            [navigationButton sizeToFit];
+            [navigationButton addTarget:self action:@selector(navigationButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+            annotationView.rightCalloutAccessoryView = navigationButton;
+            
+            double delayInSeconds = .3;
+            dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+            dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+                [annotationView setSelected:YES animated:YES];
+            });
+        }
+
+        return annotationView;
+    }
+    
+    return nil;
+}
+
+- (void)mapView:(MAMapView *)mapView annotationView:(MAAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control
+{
+
+}
+
+- (void)mapView:(MAMapView *)mapView didSelectAnnotationView:(MAAnnotationView *)view
+{
+    self.selectedAnnotation = view.annotation;
 }
 /////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////
@@ -156,6 +231,10 @@
     
 }
 
-
+- (void)navigationButtonClicked:(id)sender
+{
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Warning" message:@"Do you want to open GaoDe Map?" delegate:self cancelButtonTitle:@"No" otherButtonTitles:@"Yes", nil];
+    [alertView show];
+}
 
 @end
