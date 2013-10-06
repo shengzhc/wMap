@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "WMLandmarkEntity.h"
+#import "WMShowEntity.h"
+#import "WMAMapPOI.h"
 
 @interface WMRepository : NSObject
 

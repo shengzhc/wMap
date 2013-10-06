@@ -8,12 +8,14 @@
 
 #import "WMMapViewController.h"
 #import "WMMapView.h"
+#import "WMMapSearchViewController.h"
 
 @interface WMMapViewController ()
 
 @property (nonatomic, strong) MAMapView *mapView;
 @property (nonatomic, strong) UIButton *widgetButton;
 @property (nonatomic, strong) id < MAAnnotation > selectedAnnotation;
+@property (nonatomic, strong) WMMapSearchViewController *mapSearchViewController;
 
 @end
 
@@ -68,6 +70,16 @@
 {
     return @"Map";
 }
+
+- (WMMapSearchViewController *)mapSearchViewController
+{
+    if (!_mapSearchViewController)
+    {
+        _mapSearchViewController = [[WMMapSearchViewController alloc] initWithDelegate:self];
+    }
+    
+    return _mapSearchViewController;
+}
 /////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////
 #pragma mark ActionSheetDelegate
@@ -82,7 +94,9 @@
         case 1:
             self.mapView.showTraffic = YES;
             break;
-            
+        case 2:
+            [self searchButtonClicked:nil];
+            break;
         default:
             break;
     }
@@ -144,6 +158,19 @@
     [self.mapView addAnnotation:showEntity];
 }
 
+- (void)locateWithPOI:(WMAMapPOI *)poi
+{
+    [self dismissViewControllerAnimated:YES
+                             completion:^
+    {
+        MAMapRect rect = MAMapRectForCoordinateRegion(MACoordinateRegionMake([poi coordinate], MACoordinateSpanMake(0.0003, 0.0004)));
+        
+        [self.mapView setVisibleMapRect:rect];
+        [self.mapView removeAnnotation:poi];
+        [self.mapView addAnnotation:poi];
+    }];
+}
+
 - (void)openExternalMapApplication
 {
     NSURL *url = [NSURL URLWithString:@"scheme:iosamap"];
@@ -164,7 +191,6 @@
 /////////////////////////////////////////////////////////////////////////////
 - (void)mapView:(MAMapView *)mapView didUpdateUserLocation:(MAUserLocation *)userLocation
 {
-    [self locatemeButtonClicked:nil];
 }
 
 - (void)mapView:(MAMapView *)mapView didFailToLocateUserWithError:(NSError *)error
@@ -174,10 +200,9 @@
 
 - (MAAnnotationView *)mapView:(MAMapView *)mapView viewForAnnotation:(id<MAAnnotation>)annotation
 {
-    static NSString *annotationViewIdentifier = @"annotationViewIdentifier";
-    
     if ([annotation isKindOfClass:[WMShowEntity class]])
     {
+        NSString *annotationViewIdentifier = @"annotationViewIdentifier";
         MAAnnotationView *annotationView = (MAAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:annotationViewIdentifier];
         if (!annotationView)
         {
@@ -200,6 +225,32 @@
 
         return annotationView;
     }
+    else if ([annotation isKindOfClass:[WMAMapPOI class]])
+    {
+        NSString *annotationViewIdentifier = @"poiAnnotationViewIdentifier";
+        MAAnnotationView *annotationView = (MAAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:annotationViewIdentifier];
+        if (!annotationView)
+        {
+            annotationView = [[MAAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:annotationViewIdentifier];
+            annotationView.canShowCallout = YES;
+            annotationView.image = [UIImage imageNamed:@"pin"];
+            
+            UIButton *navigationButton = [UIButton buttonWithType:UIButtonTypeCustom];
+            [navigationButton setBackgroundImage:[UIImage imageNamed:@"map_traffic"] forState:UIControlStateNormal];
+            [navigationButton sizeToFit];
+            [navigationButton addTarget:self action:@selector(navigationButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+            annotationView.rightCalloutAccessoryView = navigationButton;
+            
+            double delayInSeconds = .3;
+            dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+            dispatch_after(popTime, dispatch_get_main_queue(), ^(void)
+            {
+                [annotationView setSelected:YES animated:YES];
+            });
+        }
+        
+        return annotationView;
+    }
     
     return nil;
 }
@@ -220,7 +271,7 @@
 /////////////////////////////////////////////////////////////////////////////
 - (void)widgetButtonClicked:(UIButton *)button
 {
-    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Current Location", @"Show Current Traffic", nil];
+    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Current Location", @"Show Current Traffic", @"Search Nearby", nil];
     [actionSheet showFromTabBar:self.tabBarController.tabBar];
 }
 
@@ -235,6 +286,17 @@
 {
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Warning" message:@"Do you want to open GaoDe Map?" delegate:self cancelButtonTitle:@"No" otherButtonTitles:@"Yes", nil];
     [alertView show];
+}
+
+- (void)searchButtonClicked:(id)sender
+{
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:self.mapSearchViewController];
+    [self presentViewController:nav animated:YES completion:nil];
+}
+
+- (void)backButtonClicked:(id)sender
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

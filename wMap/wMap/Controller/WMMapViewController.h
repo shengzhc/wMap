@@ -8,9 +8,11 @@
 
 #import "WMViewController.h"
 #import <MAMapKit/MAMapKit.h>
+#import <AMapSearchKit/AMapSearchAPI.h>
 
 @interface WMMapViewController : WMViewController < MAMapViewDelegate, UIActionSheetDelegate, UIAlertViewDelegate >
 
 - (void)locateWithShowEntity:(WMShowEntity *)showEntity;
+- (void)locateWithPOI:(WMAMapPOI *)poi;
 
 @end

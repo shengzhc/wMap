@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E723843918008DE000891626 /* WMMapSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E723843818008DE000891626 /* WMMapSearchViewController.m */; };
+		E723843C18008DF100891626 /* WMMapSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = E723843B18008DF100891626 /* WMMapSearchView.m */; };
+		E723843F1800907C00891626 /* AMapSearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E723843D1800907B00891626 /* AMapSearchKit.framework */; };
+		E72384401800907C00891626 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E723843E1800907C00891626 /* MAMapKit.framework */; };
+		E72384431800B15500891626 /* WMAMapPOI.m in Sources */ = {isa = PBXBuildFile; fileRef = E72384421800B15500891626 /* WMAMapPOI.m */; };
 		E7260EC117ED837B00069E46 /* WMShowEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = E7260EC017ED837B00069E46 /* WMShowEntity.m */; };
 		E7260EC417ED840A00069E46 /* WMLandmarkEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = E7260EC317ED840A00069E46 /* WMLandmarkEntity.m */; };
 		E72EC55017EADCA500683AA9 /* WMCancelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E72EC54F17EADCA500683AA9 /* WMCancelCell.m */; };
@@ -20,7 +25,6 @@
 		E75D1A2517FBCCD3009C9828 /* WMBuildingDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E75D1A2417FBCCD3009C9828 /* WMBuildingDetailViewController.m */; };
 		E75D1A2817FBCCE0009C9828 /* WMBuildingDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = E75D1A2717FBCCE0009C9828 /* WMBuildingDetailView.m */; };
 		E75D1A2B17FBE7A6009C9828 /* WMBuildingCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E75D1A2A17FBE7A6009C9828 /* WMBuildingCollectionViewCell.m */; };
-		E75D1A5717FBF865009C9828 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E75D1A5617FBF865009C9828 /* MAMapKit.framework */; };
 		E75D1A5917FBF8B0009C9828 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E75D1A5817FBF8B0009C9828 /* libstdc++.6.0.9.dylib */; };
 		E75D1A5B17FBF8BA009C9828 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E75D1A5A17FBF8BA009C9828 /* Security.framework */; };
 		E75D1A5D17FBF947009C9828 /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E75D1A5C17FBF947009C9828 /* AMap.bundle */; };
@@ -107,6 +111,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E723843718008DE000891626 /* WMMapSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMMapSearchViewController.h; sourceTree = "<group>"; };
+		E723843818008DE000891626 /* WMMapSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMMapSearchViewController.m; sourceTree = "<group>"; };
+		E723843A18008DF100891626 /* WMMapSearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMMapSearchView.h; sourceTree = "<group>"; };
+		E723843B18008DF100891626 /* WMMapSearchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMMapSearchView.m; sourceTree = "<group>"; };
+		E723843D1800907B00891626 /* AMapSearchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapSearchKit.framework; sourceTree = "<group>"; };
+		E723843E1800907C00891626 /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MAMapKit.framework; sourceTree = "<group>"; };
+		E72384411800B15500891626 /* WMAMapPOI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMAMapPOI.h; sourceTree = "<group>"; };
+		E72384421800B15500891626 /* WMAMapPOI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMAMapPOI.m; sourceTree = "<group>"; };
 		E7260EBF17ED837B00069E46 /* WMShowEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMShowEntity.h; sourceTree = "<group>"; };
 		E7260EC017ED837B00069E46 /* WMShowEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMShowEntity.m; sourceTree = "<group>"; };
 		E7260EC217ED840A00069E46 /* WMLandmarkEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMLandmarkEntity.h; sourceTree = "<group>"; };
@@ -127,7 +139,6 @@
 		E75D1A2717FBCCE0009C9828 /* WMBuildingDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMBuildingDetailView.m; sourceTree = "<group>"; };
 		E75D1A2917FBE7A6009C9828 /* WMBuildingCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMBuildingCollectionViewCell.h; sourceTree = "<group>"; };
 		E75D1A2A17FBE7A6009C9828 /* WMBuildingCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMBuildingCollectionViewCell.m; sourceTree = "<group>"; };
-		E75D1A5617FBF865009C9828 /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MAMapKit.framework; path = ../../../Downloads/AMap_iOS_API_Lib_V2.1/2D/MAMapKit.framework; sourceTree = "<group>"; };
 		E75D1A5817FBF8B0009C9828 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
 		E75D1A5A17FBF8BA009C9828 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		E75D1A5C17FBF947009C9828 /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AMap.bundle; sourceTree = "<group>"; };
@@ -235,18 +246,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E781D74C17DEE31E0005DD2E /* libz.dylib in Frameworks */,
 				E75D1A5B17FBF8BA009C9828 /* Security.framework in Frameworks */,
+				E72384401800907C00891626 /* MAMapKit.framework in Frameworks */,
 				E75D1A5917FBF8B0009C9828 /* libstdc++.6.0.9.dylib in Frameworks */,
 				E781D74A17DEE30F0005DD2E /* CoreTelephony.framework in Frameworks */,
-				E75D1A5717FBF865009C9828 /* MAMapKit.framework in Frameworks */,
 				E781D90C17DEF71E0005DD2E /* MapKit.framework in Frameworks */,
 				E781D8CF17DEF3810005DD2E /* CoreText.framework in Frameworks */,
 				E781D79917DEE3F10005DD2E /* OpenGLES.framework in Frameworks */,
-				E781D74C17DEE31E0005DD2E /* libz.dylib in Frameworks */,
 				E781D74817DEE3030005DD2E /* SystemConfiguration.framework in Frameworks */,
 				E781D74617DEE2F50005DD2E /* QuartzCore.framework in Frameworks */,
 				E7C4D57917DD9B2D001A6375 /* CoreLocation.framework in Frameworks */,
 				E7C4D56B17DD9990001A6375 /* libWMLibrary.a in Frameworks */,
+				E723843F1800907C00891626 /* AMapSearchKit.framework in Frameworks */,
 				E7C4D52117DD2114001A6375 /* UIKit.framework in Frameworks */,
 				E7C4D52317DD2114001A6375 /* Foundation.framework in Frameworks */,
 				E7C4D52517DD2114001A6375 /* CoreGraphics.framework in Frameworks */,
@@ -304,9 +316,10 @@
 		E7C4D51F17DD2114001A6375 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E723843D1800907B00891626 /* AMapSearchKit.framework */,
+				E723843E1800907C00891626 /* MAMapKit.framework */,
 				E75D1A5A17FBF8BA009C9828 /* Security.framework */,
 				E75D1A5817FBF8B0009C9828 /* libstdc++.6.0.9.dylib */,
-				E75D1A5617FBF865009C9828 /* MAMapKit.framework */,
 				E781D8CE17DEF3810005DD2E /* CoreText.framework */,
 				E781D79817DEE3F10005DD2E /* OpenGLES.framework */,
 				E781D74B17DEE31E0005DD2E /* libz.dylib */,
@@ -438,6 +451,8 @@
 				E7260EC017ED837B00069E46 /* WMShowEntity.m */,
 				E7260EC217ED840A00069E46 /* WMLandmarkEntity.h */,
 				E7260EC317ED840A00069E46 /* WMLandmarkEntity.m */,
+				E72384411800B15500891626 /* WMAMapPOI.h */,
+				E72384421800B15500891626 /* WMAMapPOI.m */,
 			);
 			path = Modal;
 			sourceTree = "<group>";
@@ -465,6 +480,8 @@
 				E75D1A2717FBCCE0009C9828 /* WMBuildingDetailView.m */,
 				E75D1A2917FBE7A6009C9828 /* WMBuildingCollectionViewCell.h */,
 				E75D1A2A17FBE7A6009C9828 /* WMBuildingCollectionViewCell.m */,
+				E723843A18008DF100891626 /* WMMapSearchView.h */,
+				E723843B18008DF100891626 /* WMMapSearchView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -484,6 +501,8 @@
 				E7EC314417E5FE0100C394E0 /* WMVerticalCollectionLayout.m */,
 				E75D1A2317FBCCD2009C9828 /* WMBuildingDetailViewController.h */,
 				E75D1A2417FBCCD3009C9828 /* WMBuildingDetailViewController.m */,
+				E723843718008DE000891626 /* WMMapSearchViewController.h */,
+				E723843818008DE000891626 /* WMMapSearchViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -616,14 +635,17 @@
 				E7C4D55417DD937A001A6375 /* WMTabBarViewController.m in Sources */,
 				E7C4D55717DD93F5001A6375 /* WMBuildingViewController.mm in Sources */,
 				E7C4D55A17DD93FE001A6375 /* WMMapViewController.m in Sources */,
+				E72384431800B15500891626 /* WMAMapPOI.m in Sources */,
 				E7C4D55D17DD9407001A6375 /* WMShowViewController.m in Sources */,
 				E7C4D56017DD941A001A6375 /* WMBuildingView.m in Sources */,
 				E7C4D56317DD9431001A6375 /* WMMapView.m in Sources */,
+				E723843918008DE000891626 /* WMMapSearchViewController.m in Sources */,
 				E7C4D56617DD943D001A6375 /* WMShowView.m in Sources */,
 				E7C4D57C17DD9BF3001A6375 /* WMNavigationBar.m in Sources */,
 				E75D1A2817FBCCE0009C9828 /* WMBuildingDetailView.m in Sources */,
 				E7EC314517E5FE0100C394E0 /* WMVerticalCollectionLayout.m in Sources */,
 				E7260EC417ED840A00069E46 /* WMLandmarkEntity.m in Sources */,
+				E723843C18008DF100891626 /* WMMapSearchView.m in Sources */,
 				E73B8D6D17EBFC23000A07EC /* WMLocalNotificationManager.m in Sources */,
 				E7EC314B17E7AE0500C394E0 /* WMRepository.m in Sources */,
 				E7EC314E17E8209800C394E0 /* WMShowCell.m in Sources */,
@@ -713,6 +735,7 @@
 					"$(inherited)",
 					/Users/shengzhc/Downloads/AMap_iOS_API_Lib_V2.1/2D,
 					/Users/shengzhc/Desktop/wMap/wMap,
+					/Users/shengzhc/Downloads/AMap_iOS_API_Lib_V2.1/Search,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "wMap/wMap-Prefix.pch";
@@ -741,6 +764,7 @@
 					"$(inherited)",
 					/Users/shengzhc/Downloads/AMap_iOS_API_Lib_V2.1/2D,
 					/Users/shengzhc/Desktop/wMap/wMap,
+					/Users/shengzhc/Downloads/AMap_iOS_API_Lib_V2.1/Search,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "wMap/wMap-Prefix.pch";
