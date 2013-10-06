@@ -61,7 +61,6 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    self.mapView.showsUserLocation = YES;
     self.mapView.scrollEnabled = YES;
     self.mapView.zoomEnabled = YES;
 }
@@ -173,11 +172,13 @@
 
 - (void)openExternalMapApplication
 {
-    NSURL *url = [NSURL URLWithString:@"scheme:iosamap"];
+    NSString *urlString = [NSString stringWithFormat:@"iosamap://path?sourceApplication=applicationName&backScheme=applicationScheme&slat=%f&slon=%f&dlat=%f&dlon=%f&dev=0&m=0&t=0", self.mapView.userLocation.coordinate.latitude, self.mapView.userLocation.coordinate.longitude, [self.selectedAnnotation coordinate].latitude, [self.selectedAnnotation coordinate].longitude];
+ 
+    NSURL *url = [NSURL URLWithString:urlString];
     
     if ([[UIApplication sharedApplication] canOpenURL:url])
     {
-        
+        [[UIApplication sharedApplication] openURL:url];
     }
     else
     {

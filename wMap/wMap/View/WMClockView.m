@@ -68,6 +68,7 @@
         WMClockViewCell *cell = (WMClockViewCell *)[tableView dequeueReusableCellWithIdentifier:WMClockCellIdentifier];
         cell.delegate = self;
         WMShowEntity *showEntity = (WMShowEntity *)[[WMRepository sharedRepository].scheduleShows objectAtIndex:indexPath.row];
+        cell.textLabel.font = [UIFont fontWithSize:14];
         cell.textLabel.text = showEntity.name;
         return cell;
     }

@@ -118,8 +118,10 @@
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText
 {
     AMapPlaceSearchRequest *searchRequest = [[AMapPlaceSearchRequest alloc] init];
-    searchRequest.searchType = AMapSearchType_PlaceKeyword;
+    searchRequest.searchType = AMapSearchType_PlaceAround;
     searchRequest.keywords = searchText;
+    searchRequest.radius = 1000 * 1000;
+    searchRequest.location = [AMapGeoPoint locationWithLatitude:30.539769878193066 longitude:114.36088979244232];
     searchRequest.requireExtension = YES;
     [self.search AMapPlaceSearch:searchRequest];
 }

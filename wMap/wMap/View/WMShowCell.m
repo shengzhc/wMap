@@ -8,7 +8,7 @@
 
 #import "WMShowCell.h"
 
-#define EXTRA_PADDING 140.0
+#define EXTRA_PADDING 100.0
 #define VELOCITY 300.0
 #define MAX_DURATION 0.2
 
@@ -42,9 +42,10 @@
                              action:@selector(alarmButtonClicked:)
                    forControlEvents:UIControlEventTouchUpInside];
         [self.alarmButton setTitle:@"Schedule" forState:UIControlStateNormal];
+        self.alarmButton.titleLabel.font = [UIFont fontWithSize:14];
         [self.alarmButton setTitleColor:[UIColor whiteColor]
                                forState:UIControlStateNormal];
-        [self.alarmButton setBackgroundColor:[UIColor redColor]];
+        [self.alarmButton setBackgroundColor:[UIColor colorWithHex:0xFA3F3C]];
         [self.alarmButton sizeToFit];
         
         self.locationButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -52,10 +53,11 @@
                                 action:@selector(locationButtonClicked:)
                       forControlEvents:UIControlEventTouchUpInside];
         [self.locationButton setTitle:@"Location" forState:UIControlStateNormal];
-        [self.locationButton setBackgroundColor:[UIColor colorWithHex:0x0000CC]];
+        self.locationButton.titleLabel.font = [UIFont fontWithSize:14];
+        [self.locationButton setBackgroundColor:[UIColor colorWithHex:0x4C97D4]];
         [self.locationButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [self.locationButton sizeToFit];
-        
+
         [self.contentView addSubview:self.alarmButton];
         [self.contentView addSubview:self.locationButton];
         
