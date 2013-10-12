@@ -55,7 +55,11 @@
     if (self.landmarkImageView.image)
     {
         CGFloat scale = self.bounds.size.width / self.landmarkImageView.image.size.width;
-        self.landmarkImageView.frame = [self.landmarkImageView alignedRectInSuperviewForSize:CGSizeMake(self.bounds.size.width, self.landmarkImageView.image.size.height * scale) offset:CGSizeMake(0, 0) options:(WMAlignmentOptionsHorizontalCenter | WMAlignmentOptionsTop)];
+        CGFloat height = self.landmarkImageView.image.size.height * scale;
+        if ( height > self.bounds.size.height /2.0) {
+            height = 200.0f;
+        }
+        self.landmarkImageView.frame = [self.landmarkImageView alignedRectInSuperviewForSize:CGSizeMake(self.bounds.size.width, height) offset:CGSizeMake(0, 0) options:(WMAlignmentOptionsHorizontalCenter | WMAlignmentOptionsTop)];
     }
     
     self.contentView.frame = [self.contentView alignedRectInSuperviewForSize:CGSizeMake(self.bounds.size.width, self.bounds.size.height - self.landmarkImageView.bounds.size.height) offset:CGSizeMake(0, self.landmarkImageView.verticalEnding) options:(WMAlignmentOptionsHorizontalCenter | WMAlignmentOptionsTop)];

@@ -1,56 +1,56 @@
 [
-  {
-  "name":"“珞珈学术精品成果展”开展仪式",
-  "address":"新图书馆",
-  "time":"2013-11-28T10:00:00",
-  "coordination":{"latitude":30.537773910522535, "longitude":114.35712397098541},
-  "description":"举办合校十年来学术精品成果汇展",
-  "image":"new_library.png",
-  "speaker":""
-  },
-  {
-  "name":"校史馆开馆仪式暨《武汉大学老照片》首发仪式",
-  "address":"原老图书馆",
-  "time":"2013-11-28T14:00:00",
-  "coordination":{"latitude":30.54240338387717, "longitude":114.35822904109955},
-  "description":"校史馆9月试开展以后，完善充实，正式开馆。《武汉大学老照片》首发",
-  "image":"old_library.png",
-  "speaker":""
-  },
-  {
-  "name":"“万林艺术博物馆”落成仪式“",
-  "address":"万林艺术博物馆",
-  "time":"2013-11-28T16:00:00",
-  "coordination":{"latitude":30.538878166224592, "longitude":114.35756385326385},
-  "description":"万林艺术博物馆”落成",
-  "image":"museum.png",
-  "speaker":""
-  },
-  {
-  "name":"校庆招待会（冷餐会）",
-  "address":"珞珈山庄",
-  "time":"2013-11-28T18:00:00",
-  "coordination":{"latitude":30.532190065488553, "longitude":114.35902297496796},
-  "description":"在珞珈山庄等处以自助晚宴形式招待学校邀请的嘉宾",
-  "image":"luojiavilla.png",
-  "speaker":""
-  },
-  {
-  "name":"120周年校庆文艺晚会",
-  "address":"信息学部大学生活动中心",
-  "time":"2013-11-28T19:30:00",
-  "coordination":{"latitude":30.529433833345053, "longitude":114.35687720775604},
-  "description":"以师生员工、校友为主策划、编导、演出，在信息学部大学生活动中心举行文艺晚会，共庆校庆。",
-  "image":"activty_center.png",
-  "speaker":""
-  },
-  {
-  "name":"120周年校庆庆典大会",
-  "address":"梅园小操场",
-  "time":"2013-11-29T09:00:00",
-  "coordination":{"latitude":30.540675442596324, "longitude":114.35925364494324},
-  "description":"在梅园小操场举行庆典大会。庆典大会上集中颁发2013年学校各类重要奖项。",
-  "image":"plum_garden_playground.png",
-  "speaker":""
-  }
-]
+		{
+			"name":"“珞珈学术精品成果展”开展仪式",
+			"address":"新图书馆",
+			"time":"2013-11-28T10:00:00",
+			"coordination":{"latitude":30.537773910522535, "longitude":114.35712397098541},
+			"description":"举办合校十年来学术精品成果汇展",
+			"image":"new_library.png",
+			"speaker":""
+		},
+		{
+			"name":"校史馆开馆仪式暨《武汉大学老照片》首发仪式",
+			"address":"原老图书馆",
+			"time":"2013-11-28T14:00:00",
+			"coordination":{"latitude":30.54240338387717, "longitude":114.35822904109955},
+			"description":"校史馆9月试开展以后，完善充实，正式开馆。《武汉大学老照片》首发",
+			"image":"old_library.png",
+			"speaker":""
+		},
+		{
+			"name":"“万林艺术博物馆”落成仪式“",
+			"address":"万林艺术博物馆",
+			"time":"2013-11-28T16:00:00",
+			"coordination":{"latitude":30.538878166224592, "longitude":114.35756385326385},
+			"description":"万林艺术博物馆”落成",
+			"image":"museum.png",
+			"speaker":""
+		},
+		{
+			"name":"校庆招待会（冷餐会）",
+			"address":"珞珈山庄",
+			"time":"2013-11-28T18:00:00",
+			"coordination":{"latitude":30.532190065488553, "longitude":114.35902297496796},
+			"description":"在珞珈山庄等处以自助晚宴形式招待学校邀请的嘉宾",
+			"image":"luojiashanzhuang.png",
+			"speaker":""
+		},
+		{
+			"name":"120周年校庆文艺晚会",
+			"address":"信息学部大学生活动中心",
+			"time":"2013-11-28T19:30:00",
+			"coordination":{"latitude":30.529433833345053, "longitude":114.35687720775604},
+			"description":"以师生员工、校友为主策划、编导、演出，在信息学部大学生活动中心举行文艺晚会，共庆校庆。",
+			"image":"activity_center.png",
+			"speaker":""
+		},
+		{
+			"name":"120周年校庆庆典大会",
+			"address":"梅园小操场",
+			"time":"2013-11-29T09:00:00",
+			"coordination":{"latitude":30.540675442596324, "longitude":114.35925364494324},
+			"description":"在梅园小操场举行庆典大会。庆典大会上集中颁发2013年学校各类重要奖项。",
+			"image":"plum_garden_playground.png",
+			"speaker":""
+		}
+ ]
